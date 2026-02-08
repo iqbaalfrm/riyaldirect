@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="RiyalDirect - Jasa Transfer Riyal untuk Pembayaran Muasasah dan Pembayaran Hotel Saudi secara aman, cepat, dan transparan untuk jamaah dan travel Indonesia.">
+  <meta name="keywords" content="transfer riyal, pembayaran muasasah, hotel saudi, riyal saudi, pembayaran haji umrah">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="RiyalDirect">
+  <link rel="canonical" href="https://riyaldirect.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="RiyalDirect">
+  <meta property="og:title" content="RiyalDirect">
+  <meta property="og:description"
+    content="Transfer Riyal aman untuk Pembayaran Muasasah dan Pembayaran Hotel Saudi. Konsultasi cepat via WhatsApp dengan tim RiyalDirect.">
+  <meta property="og:url" content="https://riyaldirect.com">
+  <meta property="og:image" content="https://riyaldirect.com/og-riyaldirect.jpg">
+  <meta property="og:image:alt" content="RiyalDirect - layanan transfer riyal untuk pembayaran Muasasah dan hotel Saudi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RiyalDirect">
+  <meta name="twitter:description"
+    content="Transfer Riyal aman untuk Pembayaran Muasasah dan Pembayaran Hotel Saudi.">
+  <meta name="twitter:image" content="https://riyaldirect.com/og-riyaldirect.jpg">
+  <title>RiyalDirect - Solusi Pembayaran Muasasah & Hotel Saudi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS - Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              900: '#064e3b',
+              800: '#065f46',
+              700: '#047857',
+            },
+            gold: {
+              400: '#d4af37',
+              500: '#c9a227',
+              600: '#b8941f',
+            },
+            cream: '#fafafa',
+            lightgray: '#f8f9fa',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "RiyalDirect",
+      "url": "https://riyaldirect.com",
+      "description": "Jasa pembayaran Muasasah dan Hotel Saudi dengan layanan transfer riyal yang aman, cepat, dan transparan.",
+      "areaServed": [
+        "Indonesia",
+        "Saudi Arabia"
+      ]
+    }
+  </script>
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #064e3b;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #047857;
+    }
+
+    /* Floating animation for WhatsApp button */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.8);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .pulse-ring::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #25D366;
+      animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      z-index: -1;
+    }
+
+    /* Hero text animation */
+    .hero-text-animate {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .hero-text-animate:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .hero-text-animate:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .hero-text-animate:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .hero-text-animate:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Card hover effect */
+    .feature-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 50px -12px rgba(6, 78, 59, 0.25);
+    }
+
+    .feature-card:hover .icon-wrapper {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .icon-wrapper {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Gold shimmer effect */
+    .gold-shimmer {
+      background: linear-gradient(90deg,
+          #d4af37 0%,
+          #f5d77a 25%,
+          #d4af37 50%,
+          #f5d77a 75%,
+          #d4af37 100%);
+      background-size: 200% 100%;
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    /* Trust bar decoration */
+    .trust-decoration::before,
+    .trust-decoration::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37);
+    }
+
+    .trust-decoration::before {
+      left: -120px;
+      background: linear-gradient(90deg, transparent, #d4af37);
+    }
+
+    .trust-decoration::after {
+      right: -120px;
+      background: linear-gradient(90deg, #d4af37, transparent);
+    }
+
+    /* CTA Button hover */
+    .cta-button {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .cta-button:hover::before {
+      left: 100%;
+    }
+
+    /* Background pattern */
+    .pattern-bg {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23064e3b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* --- Subtle UI Enhancements --- */
+    .feature-soft-bg {
+      background: linear-gradient(135deg, #ffffff 40%, #fdfcf5 100%);
+      position: relative;
+      z-index: 10;
+    }
+
+    .feature-soft-bg::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      z-index: -1;
+      background: linear-gradient(135deg, rgba(6, 78, 59, 0.05), rgba(212, 175, 55, 0.15));
+      border-radius: 2.2rem;
+      /* slightly larger than card */
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .feature-soft-bg:hover::before {
+      opacity: 1;
+    }
+
+    /* Smooth Levitation */
+    .hover-lift {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px -10px rgba(6, 78, 59, 0.15);
+      /* Soft emerald shadow */
+    }
+
+
+    /* Noise Overlay for Natural Feel */
+    .bg-noise {
+      position: relative;
+    }
+
+    .bg-noise::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+
+    /* Typography Softening */
+    body {
+      color: #374151;
+      /* Gray-700 instead of pure black */
+    }
+
+    p {
+      line-height: 1.8 !important;
+      /* Increased leading for comfort */
+      letter-spacing: 0.01em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      letter-spacing: -0.02em;
+      /* Tighter headings for modern look */
+    }
+  </style>
+</head>
+
+<body class="bg-white pattern-bg">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 md:w-12 md:h-12 bg-emerald-900 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-900/10">
+            <i data-lucide="banknote" class="w-5 h-5 md:w-6 md:h-6 text-gold-400"></i>
+          </div>
+          <span class="text-xl md:text-2xl font-bold text-emerald-900 tracking-tight">Riyal<span
+              class="text-gold-400">Direct</span></span>
+        </div>
+        <button type="button" onclick="toggleWAModal()"
+          class="hidden sm:flex items-center gap-2 bg-emerald-900 hover:bg-emerald-800 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/30">
+          <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5"></i>
+          <span>Hubungi Kami</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center pt-24 md:pt-28 lg:pt-32 pb-14 md:pb-16 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-20 right-0 w-72 h-72 md:w-96 md:h-96 bg-emerald-900/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-0 w-72 h-72 md:w-96 md:h-96 bg-gold-400/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center">
+        <!-- Left Content -->
+        <div class="text-center lg:text-left max-w-2xl lg:max-w-none">
+          <div class="hero-text-animate">
+            <div
+              class="inline-flex items-center gap-3 bg-white border border-gold-200 text-emerald-950 px-5 py-2.5 rounded-full text-sm font-bold mb-7 md:mb-8 shadow-xl shadow-gold-500/10 hover:shadow-gold-500/20 transition-all cursor-default">
+              <span
+                class="flex items-center justify-center w-6 h-6 bg-gold-400 rounded-full text-white shadow-sm ring-2 ring-white">
+                <i data-lucide="award" class="w-3.5 h-3.5"></i>
+              </span>
+              <span
+                class="tracking-wide bg-gradient-to-r from-emerald-900 to-emerald-700 bg-clip-text text-transparent">TEROBOSAN
+                PERTAMA DI INDONESIA</span>
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+            </div>
+          </div>
+
+          <h1
+            class="hero-text-animate text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-emerald-950 leading-[1.06] mb-5 md:mb-6 font-poppins">
+            Transfer Riyal untuk Bayar
+            <span class="block">Muasasah & Hotel Saudi,</span>
+            <span class="gradient-text block mt-2 pb-2">Cukup Duduk Manis</span>
+          </h1>
+
+          <p
+            class="hero-text-animate text-base md:text-lg lg:text-xl text-gray-600 mb-7 md:mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Solusi transfer riyal modern tanpa risiko membawa uang tunai. Salurkan pembayaran langsung ke
+            rekening Muasasah atau hotel Anda dengan prinsip amanah dan transparan.
+          </p>
+
+          <div class="hero-text-animate flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 lg:mb-0">
+            <button type="button" onclick="toggleWAModal()"
+              class="cta-button group inline-flex items-center justify-center gap-3 bg-gold-400 hover:bg-gold-500 text-emerald-950 px-6 py-3.5 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg transition-all duration-300 hover:shadow-xl hover:shadow-gold-400/30">
+              <i data-lucide="send" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+              Mulai Transaksi
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Mobile Calc Toggle -->
+        <div class="lg:hidden w-full px-4 mt-6">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-xl p-5 mx-auto max-w-sm">
+            <div class="flex items-center justify-between mb-4 border-b border-gray-100 pb-2">
+              <h3 class="font-bold text-emerald-950 text-sm flex items-center gap-2">
+                <i data-lucide="calculator" class="w-4 h-4 text-gold-400"></i>
+                Simulasi Kurs Cepat
+              </h3>
+              <span
+                class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span> LIVE
+              </span>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center bg-gray-50 rounded-xl border border-gray-200 p-1">
+                <div class="pl-3 pr-2 py-1.5 flex items-center gap-1 border-r border-gray-200">
+                  <img src="https://flagcdn.com/w20/sa.png" alt="Bendera Saudi untuk input Transfer Riyal"
+                    class="w-4 rounded-sm">
+                  <span class="text-xs font-bold text-gray-500">SAR</span>
+                </div>
+                <input type="number" id="input-sar-mobile" value="1000"
+                  class="w-full bg-transparent font-bold text-gray-800 text-sm px-3 focus:outline-none" placeholder="0">
+              </div>
+
+              <div class="flex justify-center -my-2.5 relative z-10">
+                <div
+                  class="w-6 h-6 bg-white border border-gray-100 rounded-full flex items-center justify-center text-gold-400 shadow-sm">
+                  <i data-lucide="arrow-down" class="w-3 h-3"></i>
+                </div>
+              </div>
+
+              <div class="flex items-center bg-emerald-50 rounded-xl border border-emerald-100 p-1">
+                <div class="pl-3 pr-2 py-1.5 flex items-center gap-1 border-r border-emerald-200">
+                  <img src="https://flagcdn.com/w20/id.png" alt="Bendera Indonesia untuk estimasi Rupiah Transfer Riyal"
+                    class="w-4 rounded-sm">
+                  <span class="text-xs font-bold text-emerald-600">IDR</span>
+                </div>
+                <input type="text" id="output-idr-mobile" readonly
+                  class="w-full bg-transparent font-bold text-emerald-800 text-sm px-3 focus:outline-none"
+                  placeholder="Rp 0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - Calculator & Illustration -->
+        <div class="hidden lg:block relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="relative max-w-[560px] xl:max-w-[590px] mx-auto lg:mx-0">
+            <!-- Main card -->
+            <div class="bg-white rounded-[2rem] shadow-2xl p-8 border border-gray-100 relative z-20">
+
+              <!-- Widget Kalkulator Kurs -->
+              <div class="mb-8 pb-8 border-b border-gray-100">
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-bold text-emerald-950 text-xl flex items-center gap-2">
+                    <i data-lucide="coins" class="w-6 h-6 text-gold-400"></i>
+                    Simulasi Kurs
+                  </h3>
+                  <span
+                    class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    LIVE
+                  </span>
+                </div>
+
+                <div class="space-y-5">
+                  <!-- Input SAR -->
+                  <div class="relative group">
+                    <label class="text-xs text-gray-400 font-bold ml-1 mb-1.5 block uppercase tracking-wide">Jumlah
+                      Riyal (SAR)</label>
+                    <div
+                      class="flex items-center bg-gray-50 rounded-2xl border border-gray-200 group-hover:border-gold-400 focus-within:border-gold-400 focus-within:ring-4 focus-within:ring-gold-400/10 transition-all p-1">
+                      <div class="pl-3 pr-2 py-2 flex items-center gap-2 border-r border-gray-200/50">
+                        <img src="https://flagcdn.com/w40/sa.png" alt="Bendera Saudi Arabia untuk kalkulator Transfer Riyal"
+                          class="w-6 h-4 rounded-sm shadow-sm object-cover">
+                        <span class="font-bold text-gray-700">SAR</span>
+                      </div>
+                      <input type="number" id="input-sar" value="1"
+                        class="w-full bg-transparent font-bold text-xl text-gray-800 focus:outline-none px-4 py-2"
+                        placeholder="0">
+                    </div>
+                  </div>
+
+                  <!-- Swap Icon -->
+                  <div class="flex justify-center -my-3 relative z-10">
+                    <div
+                      class="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center text-gold-500 shadow-md hover:scale-110 hover:text-emerald-600 transition-all duration-300 cursor-help"
+                      title="Estimasi Rate">
+                      <i data-lucide="arrow-down-up" class="w-5 h-5"></i>
+                    </div>
+                  </div>
+
+                  <!-- Output IDR -->
+                  <div class="relative group">
+                    <label class="text-xs text-gray-400 font-bold ml-1 mb-1.5 block uppercase tracking-wide">Estimasi
+                      Rupiah (IDR)</label>
+                    <div class="flex items-center bg-emerald-900/5 rounded-2xl border border-emerald-900/10 p-1">
+                      <div class="pl-3 pr-2 py-2 flex items-center gap-2 border-r border-emerald-900/10">
+                        <img src="https://flagcdn.com/w40/id.png" alt="Bendera Indonesia untuk konversi Transfer Riyal ke Rupiah"
+                          class="w-6 h-4 rounded-sm shadow-sm object-cover">
+                        <span class="font-bold text-emerald-800">IDR</span>
+                      </div>
+                      <input type="text" id="output-idr" readonly
+                        class="w-full bg-transparent font-bold text-xl text-emerald-900 focus:outline-none px-4 py-2"
+                        placeholder="0">
+                    </div>
+                  </div>
+
+                  <p class="text-[11px] text-gray-400 text-center mt-3 flex items-center justify-center gap-1">
+                    <span class="flex items-center gap-1"><i data-lucide="info" class="w-3 h-3"></i> Rate indikatif.
+                      Hubungi CS untuk final rate.</span>
+                  </p>
+                  <div class="flex items-center justify-center gap-1 mt-1 opacity-75 hover:opacity-100 transition-opacity">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-[10px] font-medium text-emerald-700">Live Data by ExchangeRate-API</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <!-- Transaction Item -->
+                <div
+                  class="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all cursor-default group">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                      <i data-lucide="building-2" class="w-5 h-5 text-emerald-700"></i>
+                    </div>
+                    <div>
+                      <p class="font-bold text-sm text-gray-900">Infiniti Hotel </p>
+                      <p class="text-[10px] text-emerald-600 font-medium flex items-center gap-1">
+                        <i data-lucide="check-circle-2" class="w-3 h-3"></i> Sukses Transfer
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="text-emerald-800 font-bold text-sm bg-emerald-100/50 px-3 py-1.5 rounded-lg border border-emerald-100">SAR
+                    20.000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating badge -->
+            <div
+              class="absolute -top-6 -right-6 bg-gold-400 text-emerald-950 px-5 py-2.5 rounded-full font-bold text-sm shadow-xl animate-bounce flex items-center gap-2 z-30">
+              <i data-lucide="shield" class="w-4 h-4"></i>
+              100% Amanah
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Trust Bar -->
+  <section class="py-10 md:py-14 bg-emerald-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <!-- Pattern -->
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
+        <div class="flex items-center gap-4 group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-white/10 group-hover:bg-gold-400 transition-colors duration-300 rounded-full flex items-center justify-center backdrop-blur-sm">
+            <i data-lucide="award"
+              class="w-7 h-7 md:w-8 md:h-8 text-gold-400 group-hover:text-emerald-900 transition-colors"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-3xl md:text-3xl font-bold text-white tracking-tight count-up" data-target="3">0</p>
+            <p class="text-emerald-200 text-sm font-medium uppercase tracking-wider">Tahun Pengalaman</p>
+          </div>
+        </div>
+
+        <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-emerald-700 to-transparent">
+        </div>
+
+        <div class="flex items-center gap-4 group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-white/10 group-hover:bg-gold-400 transition-colors duration-300 rounded-full flex items-center justify-center backdrop-blur-sm">
+            <i data-lucide="users"
+              class="w-7 h-7 md:w-8 md:h-8 text-gold-400 group-hover:text-emerald-900 transition-colors"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-3xl md:text-3xl font-bold text-white tracking-tight count-up" data-target="200">0</p>
+            <p class="text-emerald-200 text-sm font-medium uppercase tracking-wider">Mitra Puas</p>
+          </div>
+        </div>
+
+        <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-emerald-700 to-transparent">
+        </div>
+
+        <div class="flex items-center gap-4 group" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-white/10 group-hover:bg-gold-400 transition-colors duration-300 rounded-full flex items-center justify-center backdrop-blur-sm">
+            <i data-lucide="trending-up"
+              class="w-7 h-7 md:w-8 md:h-8 text-gold-400 group-hover:text-emerald-900 transition-colors"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-3xl md:text-3xl font-bold text-white tracking-tight"><span class="count-up"
+                data-target="20" data-suffix=" Juta">0</span> SAR</p>
+            <p class="text-emerald-200 text-sm font-medium uppercase tracking-wider">Tersalurkan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section id="features" class="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 md:mb-20">
+        <span
+          class="inline-flex items-center gap-2 bg-gold-50 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-gold-200"
+          data-aos="fade-up">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          Nilai Lebih Kami
+        </span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-950 mb-6" data-aos="fade-up"
+          data-aos-delay="100">
+          Mengapa Memilih <span class="text-gold-500 relative inline-block">RiyalDirect <svg
+              class="absolute w-full h-2 bottom-1 left-0" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <path d="M0 5 Q 50 10 100 5" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.3" />
+            </svg></span>?
+        </h2>
+        <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed" data-aos="fade-up"
+          data-aos-delay="200">
+          Kami menghadirkan standar pelayanan premium untuk kelancaran transaksi di Tanah Suci. Aman, cepat,
+          dan sesuai syariat.
+        </p>
+      </div>
+
+
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div
+          class="feature-soft-bg hover-lift bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden"
+          data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-emerald-100">
+          </div>
+
+          <div
+            class="icon-wrapper w-16 h-16 bg-emerald-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-900/20 relative z-10">
+            <i data-lucide="banknote" class="w-8 h-8 text-gold-400"></i>
+          </div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-emerald-950 mb-3 relative z-10">Tanpa Uang Tunai</h3>
+          <p class="text-gray-600 leading-relaxed relative z-10 mb-6">
+           Minimalisir risiko kehilangan uang tunai dengan transfer langsung ke rekening Muasasah atau hotel secara aman tanpa harus datang membawa uang cash.
+          </p>
+
+          <div
+            class="flex items-center gap-2 text-emerald-700 font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10">
+            <span>Lebih Aman</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div
+          class="feature-soft-bg hover-lift bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden"
+          data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-gold-50 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-gold-100">
+          </div>
+
+          <div
+            class="icon-wrapper w-16 h-16 bg-emerald-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-900/20 relative z-10">
+            <i data-lucide="clock" class="w-8 h-8 text-gold-400"></i>
+          </div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-emerald-950 mb-3 relative z-10">Efisiensi Waktu</h3>
+          <p class="text-gray-600 leading-relaxed relative z-10 mb-6">
+            Fokus pada ibadah dan bisnis Anda. Tanpa antre, tanpa birokrasi rumit. Transaksi efisien, transparan, dan terjaga.
+          </p>
+
+          <div
+            class="flex items-center gap-2 text-emerald-700 font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10">
+            <span>Lebih Cepat</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div
+          class="feature-soft-bg hover-lift bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden"
+          data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-emerald-100">
+          </div>
+
+          <div
+            class="icon-wrapper w-16 h-16 bg-emerald-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-900/20 relative z-10">
+            <i data-lucide="shield-check" class="w-8 h-8 text-gold-400"></i>
+          </div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-emerald-950 mb-3 relative z-10">Amanah & Terjamin</h3>
+          <p class="text-gray-600 leading-relaxed relative z-10 mb-6">
+            Reputasi 3+ tahun menjaga amanah klien. Bukti transfer (resi) resmi dan real-time langsung
+            dikirim ke WhatsApp Anda.
+          </p>
+
+          <div
+            class="flex items-center gap-2 text-emerald-700 font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10">
+            <span>Terpercaya</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /> <!-- Spacer fix -->
+
+    </div>
+  </section>
+
+
+  <!-- How It Works -->
+  <section class="py-20 md:py-28 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 md:mb-20">
+        <span
+          class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-emerald-100"
+          data-aos="fade-up">
+          <i data-lucide="list-ordered" class="w-4 h-4"></i>
+          Alur Transaksi
+        </span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-950 mb-6" data-aos="fade-up"
+          data-aos-delay="100">
+          Alur Transfer Riyal & <span class="text-gold-500">Pembayaran Hotel Saudi</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-12 relative">
+        <!-- Connecting line -->
+        <div class="hidden md:block absolute top-[2.5rem] left-[16%] right-[16%] h-1 bg-gray-100 z-0">
+          <div class="h-full bg-emerald-100 w-full"></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="text-center relative z-10" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="w-20 h-20 bg-white border-4 border-emerald-50 text-emerald-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-emerald-900/5">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-emerald-950 mb-3">Konsultasi</h3>
+          <p class="text-gray-600 px-4">Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal riyal dan
+            tujuan transfer Anda.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center relative z-10" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="w-20 h-20 bg-emerald-900 border-4 border-gold-400 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-emerald-900/20">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-emerald-950 mb-3">Pembayaran Muasasah</h3>
+          <p class="text-gray-600 px-4">Lakukan transfer Rupiah ke rekening resmi kami dengan kurs yang
+            kompetitif dan transparan.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center relative z-10" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="w-20 h-20 bg-white border-4 border-emerald-50 text-emerald-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-emerald-900/5">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-emerald-950 mb-3">Tuntas</h3>
+          <p class="text-gray-600 px-4">Riyal dikirim ke penerima. Bukti transfer valid langsung kami kirimkan
+            sebagai konfirmasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-20 md:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 md:mb-20">
+        <span
+          class="inline-flex items-center gap-2 bg-white text-gold-600 px-4 py-1.5 rounded-full text-sm font-bold mb-4 shadow-sm border border-gray-100"
+          data-aos="fade-up">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          Ulasan Mitra
+        </span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-950 mb-6" data-aos="fade-up"
+          data-aos-delay="100">
+          Kata Mereka tentang <span class="text-gold-500">Kami</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 hover:shadow-xl transition-shadow"
+          data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center gap-1 mb-6">
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+          </div>
+          <p class="text-gray-600 mb-8 italic leading-relaxed">"Alhamdulillah, sangat terbantu. Tidak perlu
+            cemas bawa cash dalam jumlah besar. Pelayanan ramah dan bukti transfer cepat keluar."</p>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 font-bold shrink-0">
+              HS
+            </div>
+            <div>
+              <p class="font-bold text-emerald-950">Haji Sudirman</p>
+              <p class="text-sm text-gray-500">Pengusaha, Jakarta</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 hover:shadow-xl transition-shadow"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center gap-1 mb-6">
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+          </div>
+          <p class="text-gray-600 mb-8 italic leading-relaxed">"Sangat recommended untuk rekan-rekan travel.
+            Pembayaran hotel dan handling jadi lebih praktis. Kursnya juga bersaing."</p>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center text-gold-700 font-bold shrink-0">
+              AR
+            </div>
+            <div>
+              <p class="font-bold text-emerald-950">Ahmad Ridwan</p>
+              <p class="text-sm text-gray-500">Owner Travel Umrah, Surabaya</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 hover:shadow-xl transition-shadow"
+          data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center gap-1 mb-6">
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+          </div>
+          <p class="text-gray-600 mb-8 italic leading-relaxed">"Prosesnya transparan dan amanah. Saya transfer
+            rupiah, 5 menit kemudian pihak Muasasah konfirmasi dana masuk. Mantap."</p>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 font-bold shrink-0">
+              SF
+            </div>
+            <div>
+              <p class="font-bold text-emerald-950">Siti Fatimah</p>
+              <p class="text-sm text-gray-500">Jamaah Haji Plus, Bandung</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 md:py-28 bg-white" id="faq">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span
+          class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-emerald-100"
+          data-aos="fade-up">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          Pusat Bantuan
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-emerald-950 mb-4" data-aos="fade-up" data-aos-delay="100">
+          Sering <span class="text-gold-500">Ditanyakan</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+        <!-- FAQ 1 -->
+        <div
+          class="group border border-gray-100 rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-gold-200">
+          <button class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="font-bold text-emerald-900 text-lg">Apakah transaksi ini aman?</span>
+            <div
+              class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center transition-transform duration-300 group-hover:bg-gold-400 group-hover:text-white faq-icon">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </div>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 faq-content">
+            <p class="text-gray-600 pb-6 leading-relaxed border-t border-gray-50 pt-4">
+              Sangat aman. Kami didukung infrastruktur perbankan resmi dan kemitraan strategis dengan warga lokal Saudi dengan kapasitas limit hingga 5 Juta SAR per hari. Dengan rekam jejak 3+ tahun, setiap transaksi dijamin transparan melalui pengiriman resi bank resmi secara real-time ke WhatsApp Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div
+          class="group border border-gray-100 rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-gold-200">
+          <button class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="font-bold text-emerald-900 text-lg">Berapa lama uang sampai ke tujuan?</span>
+            <div
+              class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center transition-transform duration-300 group-hover:bg-gold-400 group-hover:text-white faq-icon">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </div>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 faq-content">
+            <p class="text-gray-600 pb-6 leading-relaxed border-t border-gray-50 pt-4">
+             Setiap transaksi diproses secara sistematis sesuai urutan antrean yang masuk. Dana Anda akan segera diteruskan ke rekening Muasasah atau Hotel tujuan setelah proses verifikasi selesai, guna memastikan keamanan dan ketepatan data di setiap pengiriman.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div
+          class="group border border-gray-100 rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-gold-200">
+          <button class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="font-bold text-emerald-900 text-lg">Apa langkah awal untuk transaksi?</span>
+            <div
+              class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center transition-transform duration-300 group-hover:bg-gold-400 group-hover:text-white faq-icon">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </div>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 faq-content">
+            <p class="text-gray-600 pb-6 leading-relaxed border-t border-gray-50 pt-4">
+              Cukup klik tombol WhatsApp di pojok kanan bawah atau tombol "Mulai Transaksi". Tim support kami akan
+              langsung memandu Anda untuk pengecekan kurs dan nomor rekening tujuan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function toggleFaq(button) {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('.faq-icon');
+
+          // Close others
+          document.querySelectorAll('.faq-content').forEach(el => {
+            if (el !== content) {
+              el.style.maxHeight = '0px';
+              try {
+                const parent = el.previousElementSibling;
+                if (parent) {
+                  const ic = parent.querySelector('.faq-icon');
+                  if (ic) ic.classList.remove('rotate-180');
+                }
+              } catch (e) { }
+            }
+          });
+
+          // Toggle current
+          if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+            content.style.maxHeight = '0px';
+            icon.classList.remove('rotate-180');
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.classList.add('rotate-180');
+          }
+        }
+      </script>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 md:py-28 bg-emerald-900 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-gold-400/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-700/50 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5">
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div data-aos="fade-up">
+        <div
+          class="w-24 h-24 bg-white/5 backdrop-blur-md rounded-full flex items-center justify-center mx-auto mb-8 border border-white/10">
+          <i data-lucide="headphones" class="w-10 h-10 text-gold-400"></i>
+        </div>
+      </div>
+
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight" data-aos="fade-up"
+        data-aos-delay="100">
+        Siap Membantu <span class="text-gold-400">Transaksi</span> Anda
+      </h2>
+
+      <p class="text-emerald-100 text-lg md:text-xl lg:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-light"
+        data-aos="fade-up" data-aos-delay="200">
+        Dapatkan penawaran kurs terbaik hari ini. Hubungi kami untuk konsultasi gratis mengenai kebutuhan riyal
+        Anda.
+      </p>
+
+
+
+
+      <div class="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="300">
+        <button type="button" onclick="toggleWAModal()"
+          class="cta-button gold-shimmer group inline-flex items-center justify-center gap-3 bg-gold-400 hover:bg-gold-500 text-emerald-950 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 hover:shadow-2xl hover:shadow-gold-400/20 hover:-translate-y-1">
+          <i data-lucide="message-circle" class="w-6 h-6 group-hover:animate-bounce"></i>
+          Konsultasi via WhatsApp
+        </button>
+      </div>
+
+      <p class="text-emerald-300 text-sm mt-8 font-medium" data-aos="fade-up" data-aos-delay="400">
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 py-16 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-emerald-900 rounded-xl flex items-center justify-center">
+              <i data-lucide="banknote" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <span class="text-2xl font-bold text-white tracking-tight">Riyal<span
+                class="text-gold-400">Direct</span></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
+       Terobosan pertama di Indonesia, mitra terpercaya untuk pembayaran Muasasah, Hotel, dan operasional Haji & Umrah. Transaksi diproses amanah dan sistematis sesuai urutan antrean.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" title="Kunjungi Instagram RiyalDirect"
+              class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-emerald-900 hover:text-white transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" title="Kunjungi Facebook RiyalDirect"
+              class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-emerald-900 hover:text-white transition-colors">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6 text-lg">Layanan Utama</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="hover:text-gold-400 cursor-pointer transition-colors block">Transfer Muasasah</li>
+            <li class="hover:text-gold-400 cursor-pointer transition-colors block">Pembayaran Hotel</li>
+            <li class="hover:text-gold-400 cursor-pointer transition-colors block">Handling Kargo</li>
+            <li class="hover:text-gold-400 cursor-pointer transition-colors block">Kurs Riyal Terkini</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6 text-lg">Kontak Kami</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+              </svg>
+              <a href="https://wa.me/6289616448947" title="Chat WhatsApp Admin 1 Daud RiyalDirect"
+                class="hover:text-gold-400 transition-colors">+62 896-1644-8947 (daud)</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+              </svg>
+              <a href="https://wa.me/6281224292733" title="Chat WhatsApp Admin 2 Iqbal RiyalDirect"
+                class="hover:text-gold-400 transition-colors">+62 812-2429-2733 (iqbal)</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+              </svg>
+              <a href="https://wa.me/6282312697816" title="Chat WhatsApp Admin 3 Irfan RiyalDirect"
+                class="hover:text-gold-400 transition-colors">+62 823-1269-7816 (irfan)</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="mail" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>salam@riyaldirect.com</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>Jakarta, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-sm text-center md:text-left">
+          © 2026 RiyalDirect. Dilindungi Undang-Undang.
+        </p>
+        <div class="flex gap-6 text-sm text-gray-600">
+          <a href="#" title="Lihat Syarat dan Ketentuan RiyalDirect" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+          <a href="#" title="Lihat Kebijakan Privasi RiyalDirect" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Mobile Sticky CTA -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-[60] bg-white border-t border-gray-100 p-4 lg:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.05)] transform translate-y-full transition-transform duration-300"
+    id="sticky-cta">
+    <div class="flex gap-3">
+      <a href="tel:+6281234567890" title="Telepon tim RiyalDirect"
+        class="flex-1 bg-emerald-50 text-emerald-800 font-bold py-3 rounded-xl flex items-center justify-center gap-2 border border-emerald-100">
+        <i data-lucide="phone" class="w-4 h-4"></i> Call
+      </a>
+      <button type="button" onclick="toggleWAModal()"
+        class="flex-[2] bg-emerald-900 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> Chat WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <button type="button" onclick="toggleWAModal()"
+    class="fixed bottom-6 right-6 z-50 float-animation pulse-ring" id="whatsapp-float">
+    <div
+      class="w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300">
+      <svg class="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </div>
+  </button>
+
+  <!-- WhatsApp Modal -->
+  <div id="wa-modal"
+    class="fixed inset-0 z-[80] hidden items-center justify-center bg-emerald-950/60 backdrop-blur-sm p-4 sm:p-6"
+    onclick="closeWAModalOnBackdrop(event)">
+    <div
+      class="w-full max-w-xl rounded-3xl border border-white/40 bg-gradient-to-b from-white to-emerald-50/60 p-4 sm:p-6 shadow-[0_20px_60px_rgba(6,78,59,0.35)]">
+      <div class="mb-5 flex items-start justify-between gap-3">
+        <div>
+          <p
+            class="inline-flex items-center rounded-full border border-gold-200 bg-gold-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold-700">
+            WhatsApp Support
+          </p>
+          <h3 class="mt-2 text-lg sm:text-2xl font-bold text-emerald-950 leading-tight">Pilih Admin untuk Mulai Chat</h3>
+          <p class="mt-1 text-sm font-medium text-emerald-900">Pilih salah satu admin kami di bawah.</p>
+          <p class="mt-1 text-sm text-gray-600">Respons cepat, pilih admin yang sedang tersedia.</p>
+        </div>
+        <button type="button" onclick="toggleWAModal()"
+          class="h-9 w-9 shrink-0 rounded-full bg-white text-gray-500 hover:text-emerald-900 border border-gray-200 flex items-center justify-center shadow-sm">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3">
+        <a href="https://wa.me/6289616448947?text=Halo%20Admin%201%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20RiyalDirect."
+          title="Chat WhatsApp Admin 1 RiyalDirect"
+          target="_blank" rel="noopener noreferrer"
+          class="group block rounded-2xl bg-white p-4 border border-transparent hover:border-gold-400 hover:shadow-lg hover:shadow-gold-400/10 transition-all duration-300">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs uppercase tracking-wide text-gray-500 font-semibold">Dauda Asalam</p>
+              <p class="text-base sm:text-lg font-bold text-emerald-950 mt-1">+62 896-1644-8947</p>
+            </div>
+            <span
+              class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 group-hover:bg-gold-100 group-hover:text-gold-700 transition-colors">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/6281224292733?text=Halo%20Admin%202%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20RiyalDirect."
+          title="Chat WhatsApp Admin 2 RiyalDirect"
+          target="_blank" rel="noopener noreferrer"
+          class="group block rounded-2xl bg-white p-4 border border-transparent hover:border-gold-400 hover:shadow-lg hover:shadow-gold-400/10 transition-all duration-300">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs uppercase tracking-wide text-gray-500 font-semibold">Iqbal Abdul Rouf</p>
+              <p class="text-base sm:text-lg font-bold text-emerald-950 mt-1">+62 812-2429-2733</p>
+            </div>
+            <span
+              class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 group-hover:bg-gold-100 group-hover:text-gold-700 transition-colors">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/6282312697816?text=Halo%20Admin%203%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20RiyalDirect."
+          title="Chat WhatsApp Admin 3 RiyalDirect"
+          target="_blank" rel="noopener noreferrer"
+          class="group block rounded-2xl bg-white p-4 border border-transparent hover:border-gold-400 hover:shadow-lg hover:shadow-gold-400/10 transition-all duration-300">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs uppercase tracking-wide text-gray-500 font-semibold">Irfan Hidayatullah</p>
+              <p class="text-base sm:text-lg font-bold text-emerald-950 mt-1">+62 823-1269-7816</p>
+            </div>
+            <span
+              class="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 group-hover:bg-gold-100 group-hover:text-gold-700 transition-colors">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+    function toggleWAModal() {
+      const modal = document.getElementById('wa-modal');
+      if (!modal) return;
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+
+    function closeWAModalOnBackdrop(event) {
+      if (event.target === event.currentTarget) {
+        toggleWAModal();
+      }
+    }
+
+    window.addEventListener('load', () => {
+      // Initialize AOS after deferred script is available
+      if (window.AOS) {
+        AOS.init({
+          duration: 800,
+          easing: 'ease-out-cubic',
+          once: true,
+          offset: 50
+        });
+      }
+
+      // Initialize Lucide icons after deferred script is available
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+
+    // --- LOGIC KALKULATOR KURS ---
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputSar = document.getElementById('input-sar');
+      const outputIdr = document.getElementById('output-idr');
+
+      // Set default rate jika API gagal
+      let currentRate = 4250;
+
+      // Fungsi format currency IDR
+      const formatIDR = (num) => {
+        return new Intl.NumberFormat('id-ID', {
+          style: 'currency',
+          currency: 'IDR',
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0
+        }).format(num);
+      };
+
+      // Hitung Rupiah
+      const calculate = () => {
+        const amount = parseFloat(inputSar.value);
+        if (!isNaN(amount)) {
+          const result = amount * currentRate;
+          outputIdr.value = formatIDR(result);
+        } else {
+          outputIdr.value = "Rp 0";
+        }
+      };
+
+      // Fetch Real-time data
+      fetch('https://api.exchangerate-api.com/v4/latest/SAR')
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.rates && data.rates.IDR) {
+            currentRate = data.rates.IDR;
+            console.log(`Live Rate SAR to IDR: ${currentRate}`);
+          }
+          calculate(); // Update kalkulasi setelah dapat rate
+        })
+        .catch(err => {
+          console.error("Gagal mengambil kurs live, menggunakan rate fallback.", err);
+          calculate();
+        });
+
+      // Event listener saat input berubah
+      inputSar.addEventListener('input', calculate);
+
+
+      // --- Mobile Logic ---
+      const inputSarMobile = document.getElementById('input-sar-mobile');
+      const outputIdrMobile = document.getElementById('output-idr-mobile');
+
+      if (inputSarMobile) {
+        inputSarMobile.addEventListener('input', function () {
+          inputSar.value = this.value; // Sync to desktop
+          calculate(); // Trigger main calculation
+          if (outputIdrMobile) outputIdrMobile.value = outputIdr.value; // Sync result back
+        });
+
+        // Also update mobile output when desktop input changes
+        inputSar.addEventListener('input', function () {
+          if (inputSarMobile) inputSarMobile.value = this.value;
+          if (outputIdrMobile) outputIdrMobile.value = outputIdr.value;
+        });
+      }
+
+      // Jalankan kalkulasi pertama kali
+      calculate();
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+
+    // --- Sticky CTA Logic ---
+    const stickyCta = document.getElementById('sticky-cta');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      // Show sticky bar after Hero Section (approx 500px)
+      if (currentScroll > 500) {
+        stickyCta.classList.remove('translate-y-full');
+      } else {
+        stickyCta.classList.add('translate-y-full');
+      }
+
+      lastScroll = currentScroll;
+    });
+
+    // --- Counter Animation ---
+    const counters = document.querySelectorAll('.count-up');
+    const speed = 200; // The lower the slower
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText.replace(/,/g, ''); // Remove commas if any
+
+          // Lower inc to slow and higher to slow
+          const inc = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target + (counter.getAttribute('data-suffix') || '');
+          }
+        };
+        updateCount();
+      });
+    };
+
+    // Trigger counter animation when Trust Bar is in view
+    let counterTriggered = false;
+    const trustSection = document.querySelector('.bg-emerald-900'); // Target Trust Bar section
+
+    if (trustSection) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !counterTriggered) {
+          animateCounters();
+          counterTriggered = true;
+        }
+      });
+      observer.observe(trustSection);
+    }
+
+    // Navbar shadow on scroll
+    const navbar = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+      } else {
+        navbar.classList.remove('shadow-md');
+      }
+    });
+  </script>
+</body>
+
+</html>
+
