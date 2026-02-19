@@ -1783,7 +1783,8 @@
       const outputIdr = document.getElementById('output-idr');
 
       // Set default rate jika API gagal
-      let currentRate = 4250;
+      const RATE_ADJUSTMENT = 10;
+      let currentRate = 4250 + RATE_ADJUSTMENT;
 
       // Fungsi format currency IDR
       const formatIDR = (num) => {
@@ -1811,8 +1812,8 @@
         .then(res => res.json())
         .then(data => {
           if (data && data.rates && data.rates.IDR) {
-            currentRate = data.rates.IDR;
-            console.log(`Live Rate SAR to IDR: ${currentRate}`);
+            currentRate = data.rates.IDR + RATE_ADJUSTMENT;
+            console.log(`Live Rate SAR to IDR (+${RATE_ADJUSTMENT}): ${currentRate}`);
           }
           calculate(); // Update kalkulasi setelah dapat rate
         })
