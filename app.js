@@ -65,7 +65,7 @@ const translations = {
       'calc-desktop-title': 'Simulasi Kurs', 'calc-desktop-live': 'LIVE',
       'calc-label-sar': 'Jumlah Riyal (SAR)', 'calc-label-idr': 'Estimasi Rupiah (IDR)',
       'calc-rate-note': 'Rate indikatif. Hubungi CS untuk final rate.',
-      'calc-live-data': 'Live Data by ExchangeRate-API',
+      'calc-live-data': 'Kurs Google +10',
       'quote-text': '\u201cPara jamaah haji dan umrah adalah utusan Allah. Allah memanggil mereka lalu mereka memenuhi panggilan-Nya. Mereka meminta kepada-Nya lalu Allah memberi mereka.\u201d',
       'quote-source': 'HR. Ibnu Majah no. 2892 \u2014 Shahih (Al-Albani)',
       'trust-exp-label': 'Tahun Pengalaman', 'trust-partner-label': 'Mitra Puas', 'trust-disbursed-label': 'Tersalurkan',
@@ -141,7 +141,7 @@ const translations = {
       'calc-desktop-title': 'Rate Simulation', 'calc-desktop-live': 'LIVE',
       'calc-label-sar': 'Riyal Amount (SAR)', 'calc-label-idr': 'Estimated Rupiah (IDR)',
       'calc-rate-note': 'Indicative rate. Contact CS for final rate.',
-      'calc-live-data': 'Live Data by ExchangeRate-API',
+      'calc-live-data': 'Google Rate +10',
       'quote-text': '\u201cThe pilgrims performing Hajj and Umrah are delegates of Allah. He invited them and they responded. They ask of Him and He gives them.\u201d',
       'quote-source': 'HR. Ibn Majah no. 2892 \u2014 Sahih (Al-Albani)',
       'trust-exp-label': 'Years of Experience', 'trust-partner-label': 'Satisfied Partners', 'trust-disbursed-label': 'Disbursed',
@@ -217,7 +217,7 @@ const translations = {
       'calc-desktop-title': '\u0645\u062d\u0627\u0643\u0627\u0629 \u0627\u0644\u0633\u0639\u0631', 'calc-desktop-live': '\u0645\u0628\u0627\u0634\u0631',
       'calc-label-sar': '\u0645\u0628\u0644\u063a \u0627\u0644\u0631\u064a\u0627\u0644 (SAR)', 'calc-label-idr': '\u062a\u0642\u062f\u064a\u0631 \u0627\u0644\u0631\u0648\u0628\u064a\u0629 (IDR)',
       'calc-rate-note': '\u0633\u0639\u0631 \u0625\u0631\u0634\u0627\u062f\u064a. \u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 \u0644\u0644\u0633\u0639\u0631 \u0627\u0644\u0646\u0647\u0627\u0626\u064a.',
-      'calc-live-data': '\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0628\u0627\u0634\u0631\u0629',
+      'calc-live-data': '\u0633\u0639\u0631 Google +10',
       'quote-text': '\u201c\u0627\u0644\u062d\u064f\u062c\u0651\u064e\u0627\u062c\u064f \u0648\u064e\u0627\u0644\u0639\u064f\u0645\u0651\u064e\u0627\u0631\u064f \u0648\u064e\u0641\u0652\u062f\u064f \u0627\u0644\u0644\u0647\u0650\u060c \u062f\u064e\u0639\u064e\u0627\u0647\u064f\u0645\u0652 \u0641\u064e\u0623\u064e\u062c\u064e\u0627\u0628\u064f\u0648\u0647\u064f\u060c \u0648\u064e\u0633\u064e\u0623\u064e\u0644\u064f\u0648\u0647\u064f \u0641\u064e\u0623\u064e\u0639\u0652\u0637\u064e\u0627\u0647\u064f\u0645\u0652\u201d',
       'quote-source': '\u0631\u0648\u0627\u0647 \u0627\u0628\u0646 \u0645\u0627\u062c\u0647 \u0631\u0642\u0645 2892 \u2014 \u0635\u062d\u064a\u062d (\u0627\u0644\u0623\u0644\u0628\u0627\u0646\u064a)',
       'trust-exp-label': '\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u062e\u0628\u0631\u0629', 'trust-partner-label': '\u0634\u0631\u0643\u0627\u0621 \u0631\u0627\u0636\u0648\u0646', 'trust-disbursed-label': '\u062a\u0645 \u062a\u062d\u0648\u064a\u0644\u0647',
@@ -293,7 +293,7 @@ const translations = {
       'calc-desktop-title': 'Simulasi Kadar', 'calc-desktop-live': 'LIVE',
       'calc-label-sar': 'Jumlah Riyal (SAR)', 'calc-label-idr': 'Anggaran Rupiah (IDR)',
       'calc-rate-note': 'Kadar indikatif. Hubungi CS untuk kadar akhir.',
-      'calc-live-data': 'Data Langsung',
+      'calc-live-data': 'Kadar Google +10',
       'quote-text': '\u201cOrang yang mengerjakan haji dan umrah adalah utusan Allah. Allah memanggil mereka lalu mereka memenuhi panggilan-Nya. Mereka meminta kepada-Nya lalu Allah memberi mereka.\u201d',
       'quote-source': 'HR. Ibn Majah no. 2892 \u2014 Sahih (Al-Albani)',
       'trust-exp-label': 'Tahun Pengalaman', 'trust-partner-label': 'Rakan Puas', 'trust-disbursed-label': 'Disalurkan',
@@ -433,31 +433,52 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileClose.addEventListener('click', () => mobileMenu.classList.remove('active'));
   }
 
-  const inputSar = document.getElementById('input-sar');
-  const outputIdr = document.getElementById('output-idr');
+  const inputSar = document.getElementById('input-sar') || document.getElementById('input-idr');
+  const outputIdr = document.getElementById('output-idr') || document.getElementById('output-sar');
   const RATE_ADJUSTMENT = 10;
-  let currentRate = 4250 + RATE_ADJUSTMENT;
+  let currentRate = 4250 + RATE_ADJUSTMENT; // IDR per 1 SAR
 
   const formatIDR = num => new Intl.NumberFormat('id-ID', {
-    style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0
+    style: 'currency',
+    currency: 'IDR',
+    maximumFractionDigits: 0
   }).format(num);
 
   const calculate = () => {
     const amount = parseFloat(inputSar?.value);
-    if (outputIdr) outputIdr.value = !isNaN(amount) ? formatIDR(amount * currentRate) : 'Rp 0';
-    const outputMobile = document.getElementById('output-idr-mobile');
+    if (outputIdr) outputIdr.value = !isNaN(amount) && amount > 0 ? formatIDR(amount * currentRate) : formatIDR(0);
+    const outputMobile = document.getElementById('output-idr-mobile') || document.getElementById('output-sar-mobile');
     if (outputMobile && outputIdr) outputMobile.value = outputIdr.value;
   };
 
-  fetch('https://api.exchangerate-api.com/v4/latest/SAR')
-    .then(r => r.json()).then(data => {
-      if (data?.rates?.IDR) currentRate = data.rates.IDR + RATE_ADJUSTMENT;
-      calculate();
-    }).catch(() => calculate());
+  const googleRateUrl = 'https://api.codetabs.com/v1/proxy?quest=https://www.google.com/finance/quote/SAR-IDR';
+  const fallbackRateUrl = 'https://api.exchangerate-api.com/v4/latest/SAR';
+  const parseGoogleRate = html => {
+    const match = html?.match(/data-last-price="([0-9.]+)"/i);
+    return match ? parseFloat(match[1]) : NaN;
+  };
+
+  fetch(googleRateUrl)
+    .then(r => r.text())
+    .then(html => {
+      const googleRate = parseGoogleRate(html);
+      if (!isNaN(googleRate) && googleRate > 0) {
+        currentRate = googleRate + RATE_ADJUSTMENT;
+        return;
+      }
+      throw new Error('Google rate parse failed');
+    })
+    .catch(() => fetch(fallbackRateUrl)
+      .then(r => r.json())
+      .then(data => {
+        if (data?.rates?.IDR) currentRate = data.rates.IDR + RATE_ADJUSTMENT;
+      })
+      .catch(() => { }))
+    .finally(() => calculate());
 
   if (inputSar) inputSar.addEventListener('input', calculate);
 
-  const inputMobile = document.getElementById('input-sar-mobile');
+  const inputMobile = document.getElementById('input-sar-mobile') || document.getElementById('input-idr-mobile');
   if (inputMobile) {
     inputMobile.addEventListener('input', function () {
       if (inputSar) inputSar.value = this.value;
