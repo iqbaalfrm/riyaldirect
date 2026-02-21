@@ -82,6 +82,10 @@ const translations = {
       'step-desc-2': 'Lakukan transfer Rupiah ke rekening resmi kami dengan kurs kompetitif dan transparan.',
       'step-desc-3': 'Riyal dikirim ke penerima. Bukti transfer valid langsung kami kirimkan sebagai konfirmasi.',
       'testimonial-badge': 'Ulasan Mitra',
+      'proof-badge': 'Bukti Transaksi Terverifikasi',
+      'proof-heading': 'Dokumentasi Transfer Klien',
+      'proof-subtitle': 'Testimoni klien dengan bukti transfer terverifikasi. Data sensitif disamarkan untuk menjaga privasi.',
+      'proof-note': 'Tip: swipe di mobile, atau pakai tombol panah di desktop.',
       'testimonial-text-1': '\u201cAlhamdulillah, transfer ke Muasasah di Madinah lancar. Saya kirim bukti transfer Rupiah jam 10 pagi, jam 10.15 pihak Muasasah sudah konfirmasi dana masuk.\u201d',
       'testimonial-text-2': '\u201cUntuk rekan-rekan travel, ini solusi handling yang praktis. Pembayaran hotel di Makkah dan Madinah langsung beres. Kursnya juga bersaing.\u201d',
       'testimonial-text-3': '\u201cKami pakai RiyalDirect untuk bayar visa dan Muasasah 3 rombongan sekaligus. Prosesnya rapi, ada bukti transfer resmi.\u201d',
@@ -158,6 +162,10 @@ const translations = {
       'step-desc-2': 'Transfer IDR to our official account with competitive and transparent rates.',
       'step-desc-3': 'Riyal is sent to the recipient with valid proof of transfer as confirmation.',
       'testimonial-badge': 'Partner Reviews',
+      'proof-badge': 'Verified Testimonials',
+      'proof-heading': 'Real Transfer Proof, Swipe to View',
+      'proof-subtitle': 'Swipe left-right to see transfer proof and client experiences. Sensitive data is masked for privacy.',
+      'proof-note': 'Tip: swipe on mobile, or use arrow buttons on desktop.',
       'testimonial-text-1': '\u201cAlhamdulillah, transfer to Muasasah in Madinah went smoothly. I sent proof at 10am, by 10:15 Muasasah confirmed receipt.\u201d',
       'testimonial-text-2': '\u201cFor fellow travel agents, this is a practical handling solution. Hotel payments in Makkah and Madinah sorted instantly.\u201d',
       'testimonial-text-3': '\u201cWe used RiyalDirect to pay visa and Muasasah for 3 groups at once. Process was clean with official proof.\u201d',
@@ -234,6 +242,10 @@ const translations = {
       'step-desc-2': '\u062d\u0648\u0651\u0644 \u0627\u0644\u0631\u0648\u0628\u064a\u0629 \u0625\u0644\u0649 \u062d\u0633\u0627\u0628\u0646\u0627 \u0627\u0644\u0631\u0633\u0645\u064a \u0628\u0623\u0633\u0639\u0627\u0631 \u0645\u0646\u0627\u0641\u0633\u0629 \u0648\u0634\u0641\u0627\u0641\u0629.',
       'step-desc-3': '\u064a\u062a\u0645 \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0631\u064a\u0627\u0644 \u0644\u0644\u0645\u0633\u062a\u0641\u064a\u062f \u0645\u0639 \u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0631\u0633\u0645\u064a.',
       'testimonial-badge': '\u0622\u0631\u0627\u0621 \u0627\u0644\u0634\u0631\u0643\u0627\u0621',
+      'proof-badge': '\u062a\u0648\u062b\u064a\u0642 \u0627\u0644\u0639\u0645\u0644\u0627\u0621',
+      'proof-heading': '\u0625\u062b\u0628\u0627\u062a \u062d\u0648\u0627\u0644\u0629 \u062d\u0642\u064a\u0642\u064a\u060c \u0627\u0633\u062d\u0628 \u0644\u0644\u0645\u0634\u0627\u0647\u062f\u0629',
+      'proof-subtitle': '\u0627\u0633\u062d\u0628 \u064a\u0645\u064a\u0646\u0627\u064b \u0648\u064a\u0633\u0627\u0631\u0627\u064b \u0644\u0645\u0634\u0627\u0647\u062f\u0629 \u0625\u062b\u0628\u0627\u062a\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u0644\u0629 \u0648\u062a\u062c\u0627\u0631\u0628 \u0627\u0644\u0639\u0645\u0644\u0627\u0621. \u062a\u0645 \u0625\u062e\u0641\u0627\u0621 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0633\u0629 \u0644\u062e\u0635\u0648\u0635\u064a\u0629.',
+      'proof-note': '\u062a\u0644\u0645\u064a\u062d: \u0627\u0633\u062d\u0628 \u0639\u0644\u0649 \u0627\u0644\u062c\u0648\u0627\u0644 \u0623\u0648 \u0627\u0633\u062a\u062e\u062f\u0645 \u0623\u0632\u0631\u0627\u0631 \u0627\u0644\u0623\u0633\u0647\u0645 \u0639\u0644\u0649 \u0633\u0637\u062d \u0627\u0644\u0645\u0643\u062a\u0628.',
       'testimonial-text-1': '\u201c\u0627\u0644\u062d\u0645\u062f \u0644\u0644\u0647\u060c \u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0625\u0644\u0649 \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0641\u064a \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0643\u0627\u0646 \u0633\u0644\u0633\u0627\u064b. \u0623\u0631\u0633\u0644\u062a \u0625\u062b\u0628\u0627\u062a \u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0633\u0627\u0639\u0629 10 \u0635\u0628\u0627\u062d\u0627\u064b\u060c \u0648\u0641\u064a 10:15 \u0623\u0643\u062f\u062a \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645.\u201d',
       'testimonial-text-2': '\u201c\u0644\u0632\u0645\u0644\u0627\u0621 \u0627\u0644\u0633\u064a\u0627\u062d\u0629\u060c \u0647\u0630\u0627 \u062d\u0644 \u0639\u0645\u0644\u064a. \u0645\u062f\u0641\u0648\u0639\u0627\u062a \u0627\u0644\u0641\u0646\u0627\u062f\u0642 \u0641\u064a \u0645\u0643\u0629 \u0648\u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u062a\u062a\u0645 \u0641\u0648\u0631\u0627\u064b.\u201d',
       'testimonial-text-3': '\u201c\u0627\u0633\u062a\u062e\u062f\u0645\u0646\u0627 RiyalDirect \u0644\u062f\u0641\u0639 \u0627\u0644\u062a\u0623\u0634\u064a\u0631\u0627\u062a \u0648\u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0644\u0640 3 \u0645\u062c\u0645\u0648\u0639\u0627\u062a. \u0627\u0644\u0639\u0645\u0644\u064a\u0629 \u0645\u0646\u0638\u0645\u0629 \u0645\u0639 \u0625\u062b\u0628\u0627\u062a \u0631\u0633\u0645\u064a.\u201d',
@@ -310,6 +322,10 @@ const translations = {
       'step-desc-2': 'Pindahkan Rupiah ke akaun rasmi kami dengan kadar yang kompetitif dan telus.',
       'step-desc-3': 'Riyal dihantar kepada penerima. Bukti pemindahan sah dihantar sebagai pengesahan.',
       'testimonial-badge': 'Ulasan Rakan',
+      'proof-badge': 'Testimoni Disahkan',
+      'proof-heading': 'Bukti Pemindahan Asli, Boleh Swipe',
+      'proof-subtitle': 'Geser kiri-kanan untuk lihat bukti pemindahan dan pengalaman pelanggan. Data sensitif disamarkan demi privasi.',
+      'proof-note': 'Tip: swipe di mobile, atau guna butang anak panah di desktop.',
       'testimonial-text-1': '\u201cAlhamdulillah, pemindahan ke Muasasah di Madinah lancar. Saya hantar bukti pemindahan pukul 10 pagi, pukul 10.15 Muasasah sudah sahkan.\u201d',
       'testimonial-text-2': '\u201cUntuk rakan-rakan travel, ini penyelesaian handling yang praktikal. Pembayaran hotel di Makkah dan Madinah terus selesai.\u201d',
       'testimonial-text-3': '\u201cKami guna RiyalDirect untuk bayar visa dan Muasasah 3 kumpulan sekali gus. Proses kemas, ada bukti rasmi.\u201d',
@@ -490,6 +506,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   calculate();
 
+  const proofCarousel = document.getElementById('proof-carousel');
+  const proofPrev = document.getElementById('proof-prev');
+  const proofNext = document.getElementById('proof-next');
+  if (proofCarousel && proofPrev && proofNext) {
+    const getSlideStep = () => {
+      const first = proofCarousel.querySelector('.proof-card');
+      if (!first) return 320;
+      const gap = parseFloat(getComputedStyle(proofCarousel).columnGap || getComputedStyle(proofCarousel).gap || '16');
+      return first.getBoundingClientRect().width + gap;
+    };
+    proofPrev.addEventListener('click', () => {
+      proofCarousel.scrollBy({ left: -getSlideStep(), behavior: 'smooth' });
+    });
+    proofNext.addEventListener('click', () => {
+      proofCarousel.scrollBy({ left: getSlideStep(), behavior: 'smooth' });
+    });
+  }
+
   // ===== SCROLL ANIMATIONS =====
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -513,13 +547,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
 
   // Cards and items
-  document.querySelectorAll('#features .grid > div, #steps .grid > div, #testimonials .grid > div, .faq-item, #riyal-cash .bg-background-card').forEach(el => {
+  document.querySelectorAll('#features .grid > div, #steps .grid > div, #testimonials .grid > div, #proof-testimonials .proof-card, .faq-item, #riyal-cash .bg-background-card').forEach(el => {
     el.classList.add('scroll-reveal');
     revealObserver.observe(el);
   });
 
   // Section headings
-  document.querySelectorAll('#features .text-center, #steps .text-center, #testimonials .text-center, #faq .text-center, #riyal-cash .text-center').forEach(el => {
+  document.querySelectorAll('#features .text-center, #steps .text-center, #testimonials .text-center, #proof-testimonials .text-center, #faq .text-center, #riyal-cash .text-center').forEach(el => {
     el.classList.add('section-reveal');
     revealObserver.observe(el);
   });
