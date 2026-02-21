@@ -53,7 +53,7 @@
     <header id="navbar"
       class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
+        <div class="flex items-center justify-between h-16 md:h-20">
           <div class="flex items-center gap-3">
             <div
               class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-700 to-teal-800 flex items-center justify-center text-white shadow-md">
@@ -104,7 +104,7 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[200] bg-white/95 backdrop-blur-lg hidden flex-col pt-24 px-6 gap-1">
+    <div id="mobile-menu" class="fixed inset-0 z-[200] bg-white/98 backdrop-blur-xl flex-col pt-20 px-6 gap-1">
       <button id="mobile-menu-close" class="absolute top-6 right-6 text-gray-900 p-2"><span
           class="material-symbols-outlined text-3xl">close</span></button>
       <a href="#features" onclick="closeMobileMenu()"
@@ -130,7 +130,7 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="relative min-h-[90vh] flex items-center justify-center pt-20">
+    <div class="relative min-h-[90vh] flex items-center justify-center pt-16 md:pt-20">
       <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 hero-gradient-overlay z-10">
         </div>
@@ -139,23 +139,25 @@
         </div>
       </div>
       <div class="relative z-20 container mx-auto px-4 flex flex-col items-center text-center gap-8 mt-10">
-        <div class="space-y-4 max-w-4xl anim-fade-up">
+        <div class="space-y-4 max-w-4xl">
           <div
-            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-white/90 text-xs font-bold uppercase tracking-widest mb-2 trust-shimmer">
+            class="hero-badge inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-white/90 text-xs font-bold uppercase tracking-widest mb-2 trust-shimmer">
             <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
             <span id="hero-badge-text">TEROBOSAN PERTAMA DI INDONESIA</span>
           </div>
-          <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-lg"
+          <h2
+            class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-lg"
             id="hero-title">
             <span id="hero-title-line-1">Transfer Riyal untuk Muasasah & Hotel,</span><br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-white/90"
               id="hero-title-line-2">Aman, Cepat, dan Praktis</span>
           </h2>
-          <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed" id="hero-subtitle">
+          <p class="hero-subtitle text-gray-200 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed"
+            id="hero-subtitle">
             Solusi transfer riyal modern tanpa risiko membawa uang tunai. Dipercaya 500+ mitra di seluruh Indonesia.</p>
         </div>
         <!-- Calculator Widget -->
-        <div class="w-full max-w-3xl mt-4 anim-fade-up" style="animation-delay:.2s">
+        <div class="w-full max-w-3xl mt-4 hero-calc">
           <div class="bg-white/20 backdrop-blur-xl border border-white/15 p-3 rounded-xl shadow-2xl">
             <div class="flex items-center justify-between mb-3 px-1">
               <h4 class="text-sm font-bold text-white/80" id="calc-desktop-title">Simulasi Kurs</h4>
@@ -198,7 +200,7 @@
               final rate. <span class="text-white/70" id="calc-live-data">Live Data by ExchangeRate-API</span></p>
           </div>
           <!-- Trust Strip -->
-          <div class="flex items-center justify-center gap-6 mt-3 flex-wrap">
+          <div class="hero-trust flex items-center justify-center gap-6 mt-3 flex-wrap">
             <div class="flex items-center gap-1.5 text-white/50 text-[10px] font-medium">
               <span class="material-symbols-outlined text-teal-300 text-sm"
                 style="font-variation-settings:'FILL'1">verified_user</span>

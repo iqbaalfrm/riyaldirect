@@ -489,14 +489,27 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
 
+  // Cards and items
   document.querySelectorAll('#features .grid > div, #steps .grid > div, #testimonials .grid > div, .faq-item, #riyal-cash .bg-background-card').forEach(el => {
     el.classList.add('scroll-reveal');
     revealObserver.observe(el);
   });
 
-  // ===== COUNTER ANIMATION =====
+  // Section headings
+  document.querySelectorAll('#features .text-center, #steps .text-center, #testimonials .text-center, #faq .text-center, #riyal-cash .text-center').forEach(el => {
+    el.classList.add('section-reveal');
+    revealObserver.observe(el);
+  });
+
+  // Stats bar reveal
+  document.querySelectorAll('.stats-bar .text-center').forEach(el => {
+    el.classList.add('scroll-reveal');
+    revealObserver.observe(el);
+  });
+
+  // ===== COUNTER ANIMATION (easeOutExpo) =====
   let counterTriggered = false;
   const statsBar = document.querySelector('.stats-bar');
   if (statsBar) {
@@ -506,15 +519,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.count-up').forEach(counter => {
           const target = +counter.getAttribute('data-target');
           const suffix = counter.getAttribute('data-suffix') || '';
-          let current = 0;
-          const step = target / 60;
-          const animate = () => {
-            current += step;
-            if (current < target) {
-              counter.textContent = Math.ceil(current) + suffix;
+          const duration = 1500;
+          const startTime = performance.now();
+          const animate = (now) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // easeOutExpo
+            const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            const current = Math.ceil(eased * target);
+            counter.textContent = current + suffix;
+            if (progress < 1) {
               requestAnimationFrame(animate);
-            } else {
-              counter.textContent = target + suffix;
             }
           };
           requestAnimationFrame(animate);
