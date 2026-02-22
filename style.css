@@ -340,6 +340,19 @@ body {
   transform: translateY(0);
 }
 
+/* Normalize section heading spacing for a tighter business layout */
+#features .text-center.mb-16,
+#steps .text-center.mb-16,
+#testimonials .text-center.mb-16,
+#faq .text-center.mb-16 {
+  margin-bottom: clamp(2.25rem, 4vw, 3rem) !important;
+}
+
+#proof-testimonials .text-center.mb-12,
+#riyal-cash .text-center.mb-12 {
+  margin-bottom: clamp(2rem, 3.6vw, 2.6rem) !important;
+}
+
 /* ===== GRADIENT BORDER HOVER ===== */
 .gradient-border-hover {
   position: relative;
@@ -541,7 +554,7 @@ body {
 }
 
 .proof-shot {
-  min-height: 150px;
+  min-height: 220px;
   border-radius: 0.9rem;
   border: 1px dashed #99f6e4;
   background:
@@ -553,11 +566,21 @@ body {
   text-align: center;
   gap: 0.25rem;
   color: #115e59;
+  overflow: hidden;
 }
 
 .proof-shot .material-symbols-outlined {
   font-size: 2rem;
   opacity: 0.85;
+}
+
+.proof-shot img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
 }
 
 .proof-shot p {
@@ -833,6 +856,18 @@ input:focus {
 section {
   position: relative;
   overflow: hidden;
+  padding-top: clamp(3.5rem, 6vw, 4.5rem);
+  padding-bottom: clamp(3.5rem, 6vw, 4.5rem);
+}
+
+section.py-20 {
+  padding-top: clamp(3.5rem, 6vw, 4.5rem) !important;
+  padding-bottom: clamp(3.5rem, 6vw, 4.5rem) !important;
+}
+
+section.py-24 {
+  padding-top: clamp(4rem, 7vw, 5rem) !important;
+  padding-bottom: clamp(4rem, 7vw, 5rem) !important;
 }
 
 /* ===== SMOOTH TRANSITIONS ===== */
@@ -890,13 +925,26 @@ button {
 
   /* Section spacing */
   section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   section.py-24 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  /* Tighten section header gaps on mobile */
+  #features .text-center.mb-16,
+  #steps .text-center.mb-16,
+  #testimonials .text-center.mb-16,
+  #faq .text-center.mb-16 {
+    margin-bottom: 2.25rem !important;
+  }
+
+  #proof-testimonials .text-center.mb-12,
+  #riyal-cash .text-center.mb-12 {
+    margin-bottom: 2rem !important;
   }
 
   /* Stats mobile */
