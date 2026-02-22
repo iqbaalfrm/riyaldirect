@@ -55,11 +55,15 @@ const translations = {
   id: {
     text: {
       'nav-contact-text': 'Hubungi Kami',
+      'brand-tagline': 'Transfer Riyal Terpercaya',
+      'nav-link-home': 'Beranda',
       'nav-link-features': 'Layanan', 'nav-link-steps': 'Alur', 'nav-link-testimonials': 'Testimoni', 'nav-link-faq': 'FAQ',
       'hero-badge-text': 'LAYANAN TRANSFER RIYAL TERVERIFIKASI',
       'hero-title-line-1': 'Transfer Riyal untuk Muasasah & Hotel di Saudi,',
       'hero-title-line-2': 'Aman, Cepat, dan Praktis',
       'hero-subtitle': 'Layanan transfer Riyal untuk kebutuhan Muasasah dan hotel di Saudi dengan proses cepat, transparan, dan aman.',
+      'hero-trust-safe': 'Transaksi Aman',
+      'hero-trust-open': 'Buka Setiap Hari',
       'hero-cta-text': 'Mulai Transaksi',
       'hero-security-badge': '100% Amanah',
       'calc-desktop-title': 'Simulasi Kurs', 'calc-desktop-live': 'LIVE',
@@ -86,6 +90,14 @@ const translations = {
       'proof-heading': 'Dokumentasi Transfer Klien',
       'proof-subtitle': 'Testimoni klien dengan bukti transfer terverifikasi. Data sensitif disamarkan untuk menjaga privasi.',
       'proof-note': 'Geser untuk melihat bukti transfer lainnya.',
+      'proof-prev-aria': 'Geser ke kiri',
+      'proof-next-aria': 'Geser ke kanan',
+      'proof-img-alt-1': 'Bukti transfer klien 1',
+      'proof-img-alt-2': 'Bukti transfer klien 2',
+      'proof-img-alt-3': 'Bukti transfer klien 3',
+      'proof-img-alt-4': 'Bukti transfer klien 4',
+      'proof-img-alt-5': 'Bukti transfer klien 5',
+      'proof-img-alt-6': 'Bukti transfer klien 6',
       'proof-chip-1': 'Hotel', 'proof-chip-2': 'Muasasah', 'proof-chip-3': 'Riyal Cash', 'proof-chip-4': 'Hotel', 'proof-chip-5': 'Muasasah', 'proof-chip-6': 'Hotel',
       'proof-copy-1': '"Transfer hotel Makkah masuk cepat. Dari kirim bukti rupiah sampai konfirmasi hanya sekitar 10 menit."',
       'proof-copy-2': '"Aman dan transparan. Bukti transfer resmi langsung dikirim ke WhatsApp tanpa diminta."',
@@ -129,7 +141,12 @@ const translations = {
       'cash-denom-title': 'Pecahan Tersedia', 'cash-pickup-title': 'Pengambilan di Saudi',
       'cash-denom-note': 'Pecahan kecil cocok untuk belanja di sekitar Masjidil Haram & Masjid Nabawi.',
       'cash-footnote': '* Layanan riyal tunai hanya tersedia di Saudi Arabia. Untuk transfer ke rekening Muasasah/Hotel, silakan hubungi CS.',
+      'cash-badge': 'Riyal Tunai',
+      'cash-city-1': 'Makkah al-Mukarramah',
+      'cash-city-2': 'Madinah al-Munawwarah',
+      'cash-city-3': 'Jeddah (Bandara & Kota)',
       'cta-response-text': 'Respons cepat \u2022 24/7 Support',
+      'cta-security-note': 'Transaksi aman & terlindungi',
       'footer-info-title': 'Informasi', 'footer-email-text': 'admin@riyaldirect.com'
     },
     html: {
@@ -144,11 +161,15 @@ const translations = {
   en: {
     text: {
       'nav-contact-text': 'Contact Us',
+      'brand-tagline': 'Trusted Riyal Transfer',
+      'nav-link-home': 'Home',
       'nav-link-features': 'Services', 'nav-link-steps': 'Flow', 'nav-link-testimonials': 'Reviews', 'nav-link-faq': 'FAQ',
       'hero-badge-text': 'VERIFIED RIYAL TRANSFER SERVICE',
       'hero-title-line-1': 'Pay Muasasah & Hotel in Saudi,',
       'hero-title-line-2': 'Safe, Fast, and Practical',
       'hero-subtitle': 'Riyal transfer service for Muasasah and hotel payments in Saudi with a fast, transparent, and secure process.',
+      'hero-trust-safe': 'Secure Transactions',
+      'hero-trust-open': 'Open Daily',
       'hero-cta-text': 'Start Transaction',
       'hero-security-badge': '100% Trusted',
       'calc-desktop-title': 'Rate Simulation', 'calc-desktop-live': 'LIVE',
@@ -175,6 +196,14 @@ const translations = {
       'proof-heading': 'Real Transfer Proof, Swipe to View',
       'proof-subtitle': 'Swipe left-right to see transfer proof and client experiences. Sensitive data is masked for privacy.',
       'proof-note': 'Swipe to see more verified transfer proofs.',
+      'proof-prev-aria': 'Scroll left',
+      'proof-next-aria': 'Scroll right',
+      'proof-img-alt-1': 'Client transfer proof 1',
+      'proof-img-alt-2': 'Client transfer proof 2',
+      'proof-img-alt-3': 'Client transfer proof 3',
+      'proof-img-alt-4': 'Client transfer proof 4',
+      'proof-img-alt-5': 'Client transfer proof 5',
+      'proof-img-alt-6': 'Client transfer proof 6',
       'proof-chip-1': 'Hotel', 'proof-chip-2': 'Muasasah', 'proof-chip-3': 'Cash Riyal', 'proof-chip-4': 'Hotel', 'proof-chip-5': 'Muasasah', 'proof-chip-6': 'Hotel',
       'proof-copy-1': '"Hotel transfer to Makkah was fast. From sending IDR proof to confirmation took only around 10 minutes."',
       'proof-copy-2': '"Safe and transparent. Official transfer proof was sent to WhatsApp immediately without asking."',
@@ -218,7 +247,12 @@ const translations = {
       'cash-denom-title': 'Available Denominations', 'cash-pickup-title': 'Pickup in Saudi',
       'cash-denom-note': 'Small denominations are ideal for shopping around Masjidil Haram & Masjid Nabawi.',
       'cash-footnote': '* Cash Riyal service is only available in Saudi Arabia. For Muasasah/Hotel bank transfers, please contact CS.',
+      'cash-badge': 'Cash Riyal',
+      'cash-city-1': 'Makkah al-Mukarramah',
+      'cash-city-2': 'Madinah al-Munawwarah',
+      'cash-city-3': 'Jeddah (Airport & City)',
       'cta-response-text': 'Fast response \u2022 24/7 Support',
+      'cta-security-note': 'Secure & protected transaction',
       'footer-info-title': 'Information', 'footer-email-text': 'admin@riyaldirect.com'
     },
     html: {
@@ -233,11 +267,15 @@ const translations = {
   ar: {
     text: {
       'nav-contact-text': '\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627',
+      'brand-tagline': '\u062a\u062d\u0648\u064a\u0644 \u0631\u064a\u0627\u0644 \u0645\u0648\u062b\u0648\u0642',
+      'nav-link-home': '\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629',
       'nav-link-features': '\u0627\u0644\u062e\u062f\u0645\u0627\u062a', 'nav-link-steps': '\u0627\u0644\u062e\u0637\u0648\u0627\u062a', 'nav-link-testimonials': '\u0622\u0631\u0627\u0621 \u0627\u0644\u0639\u0645\u0644\u0627\u0621', 'nav-link-faq': '\u0627\u0644\u0623\u0633\u0626\u0644\u0629',
       'hero-badge-text': '\u0623\u0648\u0644 \u0627\u0628\u062a\u0643\u0627\u0631 \u0641\u064a \u0625\u0646\u062f\u0648\u0646\u064a\u0633\u064a\u0627',
       'hero-title-line-1': '\u0627\u062f\u0641\u0639 \u0631\u0633\u0648\u0645 \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0648\u0627\u0644\u0641\u0646\u062f\u0642 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629\u060c',
       'hero-title-line-2': '\u0628\u0623\u0645\u0627\u0646 \u0648\u0633\u0631\u0639\u0629 \u0648\u0633\u0647\u0648\u0644\u0629',
       'hero-subtitle': '\u062d\u0644 \u062d\u062f\u064a\u062b \u0644\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0631\u064a\u0627\u0644 \u062f\u0648\u0646 \u0645\u062e\u0627\u0637\u0631 \u062d\u0645\u0644 \u0627\u0644\u0646\u0642\u062f. \u0645\u0648\u062b\u0648\u0642 \u0645\u0646 500+ \u0634\u0631\u064a\u0643.',
+      'hero-trust-safe': '\u0645\u0639\u0627\u0645\u0644\u0627\u062a \u0622\u0645\u0646\u0629',
+      'hero-trust-open': '\u0645\u062a\u0627\u062d \u064a\u0648\u0645\u064a\u0627\u064b',
       'hero-cta-text': '\u0627\u0628\u062f\u0623 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0629',
       'hero-security-badge': '\u0623\u0645\u0627\u0646 100%',
       'calc-desktop-title': '\u0645\u062d\u0627\u0643\u0627\u0629 \u0627\u0644\u0633\u0639\u0631', 'calc-desktop-live': '\u0645\u0628\u0627\u0634\u0631',
@@ -264,6 +302,14 @@ const translations = {
       'proof-heading': '\u0625\u062b\u0628\u0627\u062a \u062d\u0648\u0627\u0644\u0629 \u062d\u0642\u064a\u0642\u064a\u060c \u0627\u0633\u062d\u0628 \u0644\u0644\u0645\u0634\u0627\u0647\u062f\u0629',
       'proof-subtitle': '\u0627\u0633\u062d\u0628 \u064a\u0645\u064a\u0646\u0627\u064b \u0648\u064a\u0633\u0627\u0631\u0627\u064b \u0644\u0645\u0634\u0627\u0647\u062f\u0629 \u0625\u062b\u0628\u0627\u062a\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u0644\u0629 \u0648\u062a\u062c\u0627\u0631\u0628 \u0627\u0644\u0639\u0645\u0644\u0627\u0621. \u062a\u0645 \u0625\u062e\u0641\u0627\u0621 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0633\u0629 \u0644\u062e\u0635\u0648\u0635\u064a\u0629.',
       'proof-note': '\u062a\u0644\u0645\u064a\u062d: \u0627\u0633\u062d\u0628 \u0639\u0644\u0649 \u0627\u0644\u062c\u0648\u0627\u0644 \u0623\u0648 \u0627\u0633\u062a\u062e\u062f\u0645 \u0623\u0632\u0631\u0627\u0631 \u0627\u0644\u0623\u0633\u0647\u0645 \u0639\u0644\u0649 \u0633\u0637\u062d \u0627\u0644\u0645\u0643\u062a\u0628.',
+      'proof-prev-aria': '\u062a\u0645\u0631\u064a\u0631 \u0644\u0644\u064a\u0633\u0627\u0631',
+      'proof-next-aria': '\u062a\u0645\u0631\u064a\u0631 \u0644\u0644\u064a\u0645\u064a\u0646',
+      'proof-img-alt-1': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 1',
+      'proof-img-alt-2': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 2',
+      'proof-img-alt-3': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 3',
+      'proof-img-alt-4': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 4',
+      'proof-img-alt-5': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 5',
+      'proof-img-alt-6': '\u0625\u062b\u0628\u0627\u062a \u062a\u062d\u0648\u064a\u0644 \u0639\u0645\u064a\u0644 6',
       'proof-chip-1': '\u0641\u0646\u062f\u0642', 'proof-chip-2': '\u0645\u0624\u0633\u0633\u0629', 'proof-chip-3': '\u0631\u064a\u0627\u0644 \u0646\u0642\u062f\u064a', 'proof-chip-4': '\u0641\u0646\u062f\u0642', 'proof-chip-5': '\u0645\u0624\u0633\u0633\u0629', 'proof-chip-6': '\u0641\u0646\u062f\u0642',
       'proof-copy-1': '\u201c\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0641\u0646\u062f\u0642 \u0625\u0644\u0649 \u0645\u0643\u0629 \u0643\u0627\u0646 \u0633\u0631\u064a\u0639\u0627\u064b. \u0645\u0646 \u0625\u0631\u0633\u0627\u0644 \u0625\u062b\u0628\u0627\u062a \u0627\u0644\u062f\u0641\u0639 \u062d\u062a\u0649 \u0627\u0644\u062a\u0623\u0643\u064a\u062f \u062d\u0648\u0627\u0644\u064a 10 \u062f\u0642\u0627\u0626\u0642.\u201d',
       'proof-copy-2': '\u201c\u0622\u0645\u0646 \u0648\u0634\u0641\u0627\u0641. \u062a\u0645 \u0625\u0631\u0633\u0627\u0644 \u0625\u062b\u0628\u0627\u062a \u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0631\u0633\u0645\u064a \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0628\u0631 \u0648\u0627\u062a\u0633\u0627\u0628.\u201d',
@@ -307,7 +353,12 @@ const translations = {
       'cash-denom-title': '\u0627\u0644\u0641\u0626\u0627\u062a \u0627\u0644\u0645\u062a\u0627\u062d\u0629', 'cash-pickup-title': '\u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629',
       'cash-denom-note': '\u0627\u0644\u0641\u0626\u0627\u062a \u0627\u0644\u0635\u063a\u064a\u0631\u0629 \u0645\u0646\u0627\u0633\u0628\u0629 \u0644\u0644\u062a\u0633\u0648\u0642 \u062d\u0648\u0644 \u0627\u0644\u0645\u0633\u062c\u062f \u0627\u0644\u062d\u0631\u0627\u0645 \u0648\u0627\u0644\u0645\u0633\u062c\u062f \u0627\u0644\u0646\u0628\u0648\u064a.',
       'cash-footnote': '* \u062e\u062f\u0645\u0629 \u0627\u0644\u0631\u064a\u0627\u0644 \u0627\u0644\u0646\u0642\u062f\u064a \u0645\u062a\u0627\u062d\u0629 \u0641\u0642\u0637 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629. \u0644\u0644\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0628\u0646\u0643\u064a\u060c \u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621.',
+      'cash-badge': '\u0631\u064a\u0627\u0644 \u0646\u0642\u062f\u064a',
+      'cash-city-1': '\u0645\u0643\u0629 \u0627\u0644\u0645\u0643\u0631\u0645\u0629',
+      'cash-city-2': '\u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0645\u0646\u0648\u0631\u0629',
+      'cash-city-3': '\u062c\u062f\u0629 (\u0627\u0644\u0645\u0637\u0627\u0631 \u0648\u0627\u0644\u0645\u062f\u064a\u0646\u0629)',
       'cta-response-text': '\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0633\u0631\u064a\u0639\u0629 \u2022 \u062f\u0639\u0645 24/7',
+      'cta-security-note': '\u0645\u0639\u0627\u0645\u0644\u0629 \u0622\u0645\u0646\u0629 \u0648\u0645\u062d\u0645\u064a\u0629',
       'footer-info-title': '\u0645\u0639\u0644\u0648\u0645\u0627\u062a', 'footer-email-text': 'admin@riyaldirect.com'
     },
     html: {
@@ -322,11 +373,15 @@ const translations = {
   ms: {
     text: {
       'nav-contact-text': 'Hubungi Kami',
+      'brand-tagline': 'Pemindahan Riyal Dipercayai',
+      'nav-link-home': 'Utama',
       'nav-link-features': 'Perkhidmatan', 'nav-link-steps': 'Aliran', 'nav-link-testimonials': 'Ulasan', 'nav-link-faq': 'FAQ',
       'hero-badge-text': 'PERKHIDMATAN PEMINDAHAN RIYAL DISAHKAN',
       'hero-title-line-1': 'Transfer Riyal untuk Muasasah & Hotel di Saudi,',
       'hero-title-line-2': 'Selamat, Pantas, dan Praktikal',
       'hero-subtitle': 'Perkhidmatan pemindahan Riyal untuk keperluan Muasasah dan hotel di Saudi dengan proses pantas, telus, dan selamat.',
+      'hero-trust-safe': 'Transaksi Selamat',
+      'hero-trust-open': 'Buka Setiap Hari',
       'hero-cta-text': 'Mula Transaksi',
       'hero-security-badge': '100% Amanah',
       'calc-desktop-title': 'Simulasi Kadar', 'calc-desktop-live': 'LIVE',
@@ -353,6 +408,14 @@ const translations = {
       'proof-heading': 'Bukti Pemindahan Asli, Boleh Swipe',
       'proof-subtitle': 'Geser kiri-kanan untuk lihat bukti pemindahan dan pengalaman pelanggan. Data sensitif disamarkan demi privasi.',
       'proof-note': 'Geser untuk melihat lebih banyak bukti pemindahan.',
+      'proof-prev-aria': 'Geser ke kiri',
+      'proof-next-aria': 'Geser ke kanan',
+      'proof-img-alt-1': 'Bukti pemindahan pelanggan 1',
+      'proof-img-alt-2': 'Bukti pemindahan pelanggan 2',
+      'proof-img-alt-3': 'Bukti pemindahan pelanggan 3',
+      'proof-img-alt-4': 'Bukti pemindahan pelanggan 4',
+      'proof-img-alt-5': 'Bukti pemindahan pelanggan 5',
+      'proof-img-alt-6': 'Bukti pemindahan pelanggan 6',
       'proof-chip-1': 'Hotel', 'proof-chip-2': 'Muasasah', 'proof-chip-3': 'Riyal Tunai', 'proof-chip-4': 'Hotel', 'proof-chip-5': 'Muasasah', 'proof-chip-6': 'Hotel',
       'proof-copy-1': '"Pemindahan hotel ke Makkah masuk cepat. Dari hantar bukti Rupiah ke pengesahan hanya sekitar 10 minit."',
       'proof-copy-2': '"Aman dan telus. Bukti pemindahan rasmi terus dihantar ke WhatsApp tanpa diminta."',
@@ -396,7 +459,12 @@ const translations = {
       'cash-denom-title': 'Denominasi Tersedia', 'cash-pickup-title': 'Pengambilan di Saudi',
       'cash-denom-note': 'Denominasi kecil sesuai untuk membeli-belah di sekitar Masjidil Haram & Masjid Nabawi.',
       'cash-footnote': '* Perkhidmatan riyal tunai hanya tersedia di Saudi Arabia. Untuk pemindahan bank ke Muasasah/Hotel, sila hubungi CS.',
+      'cash-badge': 'Riyal Tunai',
+      'cash-city-1': 'Makkah al-Mukarramah',
+      'cash-city-2': 'Madinah al-Munawwarah',
+      'cash-city-3': 'Jeddah (Lapangan Terbang & Bandar)',
       'cta-response-text': 'Respons pantas \u2022 24/7 Support',
+      'cta-security-note': 'Transaksi selamat & dilindungi',
       'footer-info-title': 'Maklumat', 'footer-email-text': 'admin@riyaldirect.com'
     },
     html: {
@@ -448,6 +516,20 @@ function applyLanguage(lang) {
   Object.entries(dict.html || {}).forEach(([id, val]) => {
     const el = document.getElementById(id);
     if (el) el.innerHTML = val;
+  });
+  [
+    ['proof-prev', 'aria-label', 'proof-prev-aria'],
+    ['proof-next', 'aria-label', 'proof-next-aria'],
+    ['proof-img-1', 'alt', 'proof-img-alt-1'],
+    ['proof-img-2', 'alt', 'proof-img-alt-2'],
+    ['proof-img-3', 'alt', 'proof-img-alt-3'],
+    ['proof-img-4', 'alt', 'proof-img-alt-4'],
+    ['proof-img-5', 'alt', 'proof-img-alt-5'],
+    ['proof-img-6', 'alt', 'proof-img-alt-6']
+  ].forEach(([id, attr, key]) => {
+    const el = document.getElementById(id);
+    const value = dict.text?.[key];
+    if (el && value) el.setAttribute(attr, value);
   });
   updateWALinks(sel);
   localStorage.setItem('site_lang', sel);
