@@ -1,4 +1,4 @@
-ï»¿<!doctype html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -61,7 +61,7 @@
       name="twitter:description"
       content="Layanan transfer Riyal untuk pembayaran Muasasah dan hotel di Saudi dengan proses cepat dan transparan."
     />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -97,7 +97,7 @@
         },
       };
     </script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -335,7 +335,7 @@
 
       <!-- Hero Section -->
       <div
-        class="relative min-h-[90vh] flex items-center justify-center pt-16 md:pt-20"
+        class="relative min-h-[90vh] flex items-center justify-center pt-16 md:pt-20 pb-16 md:pb-24"
       >
         <div class="absolute inset-0 z-0">
           <div class="absolute inset-0 hero-gradient-overlay z-10"></div>
@@ -346,9 +346,9 @@
             "
           ></div>
         </div>
-        <div
-          class="relative z-20 container mx-auto px-4 flex flex-col items-center text-center gap-8 mt-10"
-        >
+      <div
+        class="relative z-20 container mx-auto px-4 flex flex-col items-center text-center gap-8 mt-10"
+      >
           <div class="space-y-4 max-w-4xl">
             <div
               class="hero-badge inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-white/90 text-xs font-bold uppercase tracking-widest mb-2 trust-shimmer"
@@ -380,7 +380,7 @@
             </p>
           </div>
           <!-- Calculator Widget -->
-          <div class="w-full max-w-3xl mt-4 hero-calc">
+          <div class="w-full max-w-4xl mt-4 hero-calc">
             <div
               class="bg-white/20 backdrop-blur-xl border border-white/15 p-3 rounded-xl shadow-2xl"
             >
@@ -400,7 +400,7 @@
                   <span id="calc-desktop-live">LIVE</span>
                 </div>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-12 gap-2">
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-2.5 md:gap-3 items-stretch">
                 <div class="md:col-span-5 relative group">
                   <div
                     class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
@@ -472,7 +472,7 @@
             </div>
             <!-- Trust Strip -->
             <div
-              class="hero-trust flex items-center justify-center gap-6 mt-3 flex-wrap"
+              class="hero-trust flex items-center justify-center gap-6 mt-3.5 flex-wrap"
             >
               <div
                 class="flex items-center gap-1.5 text-white/50 text-[10px] font-medium"
@@ -494,14 +494,37 @@
                 >
                 <span id="hero-trust-open">Buka Setiap Hari</span>
               </div>
-            </div>
           </div>
         </div>
       </div>
+      <div
+        class="absolute bottom-0 left-0 right-0 z-10 pointer-events-none leading-none"
+        aria-hidden="true"
+      >
+        <svg
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          class="block w-full h-[58px] md:h-[88px]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="hero-wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0f766e" />
+              <stop offset="50%" stop-color="#115e59" />
+              <stop offset="100%" stop-color="#0f766e" />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#hero-wave-gradient)"
+            d="M0,62 C170,104 320,22 500,44 C700,68 840,116 1020,90 C1190,66 1290,26 1440,46 L1440,120 L0,120 Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
 
-      <!-- Hadith Quote -->
+    <!-- Hadith Quote -->
       <section
-        class="py-12 bg-gradient-to-r from-teal-700 via-teal-800 to-teal-700 relative overflow-hidden"
+        class="-mt-px py-12 bg-gradient-to-r from-teal-700 via-teal-800 to-teal-700 relative overflow-hidden"
       >
         <div
           class="absolute inset-0 bg-islamic-pattern opacity-10 pointer-events-none"
@@ -513,10 +536,6 @@
           class="absolute -right-10 top-1/2 -translate-y-1/2 w-32 h-32 rounded-full border-2 border-white/10 opacity-20"
         ></div>
         <div class="container mx-auto px-4 text-center relative z-10">
-          <span
-            class="material-symbols-outlined text-white/20 text-5xl mb-3 block"
-            >mosque</span
-          >
           <p
             class="text-white text-base md:text-lg font-medium italic max-w-3xl mx-auto leading-relaxed"
             id="quote-text"
@@ -529,7 +548,7 @@
             class="text-white/60 text-xs font-bold uppercase tracking-[0.2em] mt-3"
             id="quote-source"
           >
-            HR. Ibnu Majah no. 2892 â€” Shahih (Al-Albani)
+            HR. Ibnu Majah no. 2892 — Shahih (Al-Albani)
           </p>
         </div>
       </section>
@@ -614,117 +633,166 @@
       </section>
 
       <!-- Why Choose Us / Features -->
-      <section class="py-20 bg-white relative overflow-hidden" id="features">
-        <div
-          class="absolute inset-0 bg-islamic-pattern opacity-10 pointer-events-none"
-        ></div>
-        <!-- Ambient blobs -->
-        <div class="container mx-auto px-4 relative z-10">
-          <div class="text-center mb-16">
+      <section
+        id="features"
+        class="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 md:mb-20">
             <span
-              class="text-primary text-sm font-bold uppercase tracking-widest mb-2 block"
-              id="feature-badge-label"
-              >Nilai Lebih Kami</span
+              class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-primary/10"
             >
+              <span class="material-symbols-outlined text-base"
+                >auto_awesome</span
+              >
+              <span id="feature-badge-label">Nilai Lebih Kami</span>
+            </span>
             <h2
-              class="text-3xl md:text-4xl font-bold text-gray-900"
               id="feature-heading"
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
             >
               Mengapa Memilih
-              <span class="text-primary accent-underline">RiyalDirect</span>?
+              <span class="text-primary relative inline-block"
+                >RiyalDirect
+                <svg
+                  class="absolute w-full h-2 bottom-1 left-0"
+                  viewBox="0 0 100 10"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    stroke="#0f766e"
+                    stroke-width="2"
+                    fill="none"
+                    opacity="0.25"
+                  />
+                </svg> </span
+              >?
             </h2>
             <p
-              class="text-gray-500 mt-4 max-w-2xl mx-auto"
               id="feature-subtitle"
+              class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
             >
               Kami menghadirkan standar pelayanan premium untuk kelancaran
               transaksi di Tanah Suci. Aman, cepat, dan sesuai syariat.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="grid md:grid-cols-3 gap-8">
             <div
-              class="bg-background-card p-8 rounded-2xl border border-gray-100 hover:border-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/8"
+              class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden transition-all duration-300 hover:-translate-y-1.5"
             >
               <div
-                class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+                class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-primary/10"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-teal-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-teal-900/20 relative z-10"
               >
-                <span class="material-symbols-outlined text-3xl text-primary"
-                  >verified_user</span
+                <span class="material-symbols-outlined text-3xl text-white"
+                  >payments</span
                 >
               </div>
+
               <h3
-                class="text-xl font-bold text-gray-900 mb-3"
                 id="feature-title-1"
+                class="text-xl md:text-2xl font-bold text-gray-900 mb-3 relative z-10"
               >
                 Tanpa Uang Tunai
               </h3>
-              <p class="text-gray-500 leading-relaxed" id="feature-desc-1">
-                Minimalisir risiko kehilangan uang tunai dengan transfer
-                langsung ke rekening Muasasah atau hotel secara aman.
-              </p>
-              <div
-                class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary uppercase tracking-wider"
+              <p
+                id="feature-desc-1"
+                class="text-gray-600 leading-relaxed relative z-10 mb-6"
               >
-                <span id="feature-tag-1">Lebih Aman</span
-                ><span class="material-symbols-outlined text-sm"
+                Minimalisir risiko kehilangan uang tunai dengan transfer
+                langsung ke rekening Muasasah atau hotel secara aman tanpa harus
+                datang membawa uang cash.
+              </p>
+
+              <div
+                class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10"
+              >
+                <span id="feature-tag-1">Lebih Aman</span>
+                <span class="material-symbols-outlined text-base"
                   >arrow_forward</span
                 >
               </div>
             </div>
+
             <div
-              class="bg-background-card p-8 rounded-2xl border border-gray-100 hover:border-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/8"
+              class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden transition-all duration-300 hover:-translate-y-1.5"
             >
               <div
-                class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+                class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-amber-100"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-teal-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-teal-900/20 relative z-10"
               >
-                <span class="material-symbols-outlined text-3xl text-primary"
-                  >speed</span
+                <span class="material-symbols-outlined text-3xl text-white"
+                  >schedule</span
                 >
               </div>
+
               <h3
-                class="text-xl font-bold text-gray-900 mb-3"
                 id="feature-title-2"
+                class="text-xl md:text-2xl font-bold text-gray-900 mb-3 relative z-10"
               >
                 Efisiensi Waktu
               </h3>
-              <p class="text-gray-500 leading-relaxed" id="feature-desc-2">
-                Fokus pada ibadah dan bisnis Anda. Tanpa antre, tanpa birokrasi
-                rumit. Transaksi efisien dan transparan.
-              </p>
-              <div
-                class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary uppercase tracking-wider"
+              <p
+                id="feature-desc-2"
+                class="text-gray-600 leading-relaxed relative z-10 mb-6"
               >
-                <span id="feature-tag-2">Lebih Cepat</span
-                ><span class="material-symbols-outlined text-sm"
+                Fokus pada ibadah dan bisnis Anda. Tanpa antre, tanpa birokrasi
+                rumit. Transaksi efisien, transparan, dan terjaga.
+              </p>
+
+              <div
+                class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10"
+              >
+                <span id="feature-tag-2">Lebih Cepat</span>
+                <span class="material-symbols-outlined text-base"
                   >arrow_forward</span
                 >
               </div>
             </div>
+
             <div
-              class="bg-background-card p-8 rounded-2xl border border-gray-100 hover:border-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/8"
+              class="bg-white rounded-[2rem] p-8 shadow-lg border border-gray-50 relative group overflow-hidden transition-all duration-300 hover:-translate-y-1.5"
             >
               <div
-                class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+                class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[4rem] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-primary/10"
+              ></div>
+
+              <div
+                class="w-16 h-16 bg-teal-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-teal-900/20 relative z-10"
               >
-                <span class="material-symbols-outlined text-3xl text-primary"
-                  >workspace_premium</span
+                <span class="material-symbols-outlined text-3xl text-white"
+                  >shield</span
                 >
               </div>
+
               <h3
-                class="text-xl font-bold text-gray-900 mb-3"
                 id="feature-title-3"
+                class="text-xl md:text-2xl font-bold text-gray-900 mb-3 relative z-10"
               >
                 Amanah & Terjamin
               </h3>
-              <p class="text-gray-500 leading-relaxed" id="feature-desc-3">
-                Reputasi 3+ tahun menjaga amanah klien. Bukti transfer resmi
-                real-time langsung dikirim ke WhatsApp Anda.
-              </p>
-              <div
-                class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary uppercase tracking-wider"
+              <p
+                id="feature-desc-3"
+                class="text-gray-600 leading-relaxed relative z-10 mb-6"
               >
-                <span id="feature-tag-3">Terpercaya</span
-                ><span class="material-symbols-outlined text-sm"
+                Reputasi 3+ tahun menjaga amanah klien. Bukti transfer (resi)
+                resmi dan real-time langsung dikirim ke WhatsApp Anda.
+              </p>
+
+              <div
+                class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:gap-3 transition-all relative z-10"
+              >
+                <span id="feature-tag-3">Terpercaya</span>
+                <span class="material-symbols-outlined text-base"
                   >arrow_forward</span
                 >
               </div>
@@ -734,104 +802,63 @@
       </section>
 
       <!-- Steps -->
-      <section class="py-20 bg-gray-50" id="steps">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-16">
+      <section id="steps" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 md:mb-20">
             <span
-              class="text-primary text-sm font-bold uppercase tracking-widest mb-2 block"
-              id="steps-badge"
-              >Alur Transaksi</span
+              class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-primary/10"
             >
+              <span class="material-symbols-outlined text-base">format_list_numbered</span>
+              <span id="steps-badge">Alur Transaksi</span>
+            </span>
             <h2
-              class="text-3xl md:text-4xl font-bold text-gray-900"
               id="steps-heading"
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
             >
               Alur Transfer Riyal &
-              <span class="text-primary">Pembayaran Hotel</span>
+              <span class="text-primary">Pembayaran Hotel Saudi</span>
             </h2>
           </div>
-          <div class="relative">
-            <!-- Connecting Line -->
-            <div
-              class="hidden md:block absolute top-[60px] left-[16.67%] right-[16.67%] h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20"
-              style="z-index: 0"
-            ></div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+
+          <div class="grid md:grid-cols-3 gap-12 relative">
+            <div class="hidden md:block absolute top-[2.5rem] left-[16%] right-[16%] h-1 bg-gray-100 z-0">
+              <div class="h-full bg-primary/15 w-full"></div>
+            </div>
+
+            <div class="text-center relative z-10 group">
               <div
-                class="bg-white p-8 rounded-2xl border border-gray-100 relative group hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
+                class="w-20 h-20 bg-white border-4 border-primary/10 text-teal-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-teal-900/5"
               >
-                <div
-                  class="absolute -top-5 left-8 w-10 h-10 rounded-full bg-teal-700 flex items-center justify-center text-white font-extrabold text-sm shadow-md ring-4 ring-white"
-                >
-                  01
-                </div>
-                <div class="mt-4">
-                  <span
-                    class="material-symbols-outlined text-4xl text-primary/30 mb-4 block"
-                    >support_agent</span
-                  >
-                  <h3
-                    class="text-xl font-bold text-gray-900 mb-3"
-                    id="step-title-1"
-                  >
-                    Konsultasi
-                  </h3>
-                  <p class="text-gray-500 leading-relaxed" id="step-desc-1">
-                    Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal
-                    riyal dan tujuan transfer Anda.
-                  </p>
-                </div>
+                1
               </div>
+              <h3 id="step-title-1" class="text-xl font-bold text-gray-900 mb-3">Konsultasi</h3>
+              <p id="step-desc-1" class="text-gray-600 px-4">
+                Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal riyal dan tujuan transfer Anda.
+              </p>
+            </div>
+
+            <div class="text-center relative z-10 group">
               <div
-                class="bg-white p-8 rounded-2xl border border-gray-100 relative group hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
+                class="w-20 h-20 bg-teal-900 border-4 border-primary/20 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-teal-900/20"
               >
-                <div
-                  class="absolute -top-5 left-8 w-10 h-10 rounded-full bg-teal-700 flex items-center justify-center text-white font-extrabold text-sm shadow-md ring-4 ring-white"
-                >
-                  02
-                </div>
-                <div class="mt-4">
-                  <span
-                    class="material-symbols-outlined text-4xl text-primary/30 mb-4 block"
-                    >payments</span
-                  >
-                  <h3
-                    class="text-xl font-bold text-gray-900 mb-3"
-                    id="step-title-2"
-                  >
-                    Pembayaran
-                  </h3>
-                  <p class="text-gray-500 leading-relaxed" id="step-desc-2">
-                    Lakukan transfer Rupiah ke rekening resmi kami dengan kurs
-                    yang kompetitif dan transparan.
-                  </p>
-                </div>
+                2
               </div>
+              <h3 id="step-title-2" class="text-xl font-bold text-gray-900 mb-3">Pembayaran Muasasah</h3>
+              <p id="step-desc-2" class="text-gray-600 px-4">
+                Lakukan transfer Rupiah ke rekening resmi kami dengan kurs yang kompetitif dan transparan.
+              </p>
+            </div>
+
+            <div class="text-center relative z-10 group">
               <div
-                class="bg-white p-8 rounded-2xl border border-gray-100 relative group hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
+                class="w-20 h-20 bg-white border-4 border-primary/10 text-teal-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-xl shadow-teal-900/5"
               >
-                <div
-                  class="absolute -top-5 left-8 w-10 h-10 rounded-full bg-teal-700 flex items-center justify-center text-white font-extrabold text-sm shadow-md ring-4 ring-white"
-                >
-                  03
-                </div>
-                <div class="mt-4">
-                  <span
-                    class="material-symbols-outlined text-4xl text-primary/30 mb-4 block"
-                    >verified</span
-                  >
-                  <h3
-                    class="text-xl font-bold text-gray-900 mb-3"
-                    id="step-title-3"
-                  >
-                    Tuntas
-                  </h3>
-                  <p class="text-gray-500 leading-relaxed" id="step-desc-3">
-                    Riyal dikirim ke penerima. Bukti transfer valid langsung
-                    kami kirimkan sebagai konfirmasi.
-                  </p>
-                </div>
+                3
               </div>
+              <h3 id="step-title-3" class="text-xl font-bold text-gray-900 mb-3">Tuntas</h3>
+              <p id="step-desc-3" class="text-gray-600 px-4">
+                Riyal dikirim ke penerima. Bukti transfer valid langsung kami kirimkan sebagai konfirmasi.
+              </p>
             </div>
           </div>
         </div>
@@ -878,7 +905,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-1"
-                    src="1.png"
+                    src="assets/images/proofs/1.png"
                     alt="Bukti transfer klien 1"
                     loading="lazy"
                   />
@@ -892,7 +919,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-2"
-                    src="2.png"
+                    src="assets/images/proofs/2.png"
                     alt="Bukti transfer klien 2"
                     loading="lazy"
                   />
@@ -906,7 +933,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-3"
-                    src="3.png"
+                    src="assets/images/proofs/3.png"
                     alt="Bukti transfer klien 3"
                     loading="lazy"
                   />
@@ -920,7 +947,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-4"
-                    src="4.png"
+                    src="assets/images/proofs/4.png"
                     alt="Bukti transfer klien 4"
                     loading="lazy"
                   />
@@ -934,7 +961,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-5"
-                    src="5.png"
+                    src="assets/images/proofs/5.png"
                     alt="Bukti transfer klien 5"
                     loading="lazy"
                   />
@@ -948,7 +975,7 @@
                 <div class="proof-shot">
                   <img
                     id="proof-img-6"
-                    src="6.png"
+                    src="assets/images/proofs/6.png"
                     alt="Bukti transfer klien 6"
                     loading="lazy"
                   />
@@ -965,11 +992,23 @@
             </button>
           </div>
 
-          <p class="text-xs text-gray-400 text-center mt-5" id="proof-note">
-            Geser untuk melihat bukti transfer lainnya.
-          </p>
-        </div>
-      </section>
+      <p class="text-xs text-gray-400 text-center mt-3" id="proof-note">
+        Geser untuk melihat bukti transfer lainnya.
+      </p>
+      <div
+        class="proof-progress mt-3.5 flex items-center justify-center gap-2"
+        id="proof-progress"
+        aria-hidden="true"
+      >
+        <span class="proof-dot is-active"></span>
+        <span class="proof-dot"></span>
+        <span class="proof-dot"></span>
+        <span class="proof-dot"></span>
+        <span class="proof-dot"></span>
+        <span class="proof-dot"></span>
+      </div>
+    </div>
+  </section>
 
       <!-- FAQ -->
       <section class="py-16 md:py-20 bg-white" id="faq">
@@ -1332,7 +1371,7 @@
           </div>
           <div class="border-t border-gray-800 pt-8 text-center">
             <p class="text-gray-500 text-sm" id="footer-copyright">
-              Â© 2026 RiyalDirect. Dilindungi Undang-Undang.
+              © 2026 RiyalDirect. Dilindungi Undang-Undang.
             </p>
           </div>
         </div>
@@ -1464,6 +1503,6 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

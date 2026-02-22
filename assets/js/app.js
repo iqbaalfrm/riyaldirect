@@ -94,17 +94,17 @@ const translations = {
       "feature-title-2": "Efisiensi Waktu",
       "feature-title-3": "Amanah & Terjamin",
       "feature-desc-1":
-        "Minimalisir risiko kehilangan uang tunai dengan transfer langsung ke rekening Muasasah atau hotel.",
+        "Minimalisir risiko kehilangan uang tunai dengan transfer langsung ke rekening Muasasah atau hotel secara aman tanpa harus datang membawa uang cash.",
       "feature-desc-2":
-        "Fokus pada ibadah dan bisnis Anda. Tanpa antre, tanpa birokrasi rumit.",
+        "Fokus pada ibadah dan bisnis Anda. Tanpa antre, tanpa birokrasi rumit. Transaksi efisien, transparan, dan terjaga.",
       "feature-desc-3":
-        "Reputasi 3+ tahun menjaga amanah klien. Bukti transfer resmi real-time via WhatsApp.",
+        "Reputasi 3+ tahun menjaga amanah klien. Bukti transfer (resi) resmi dan real-time langsung dikirim ke WhatsApp Anda.",
       "feature-tag-1": "Lebih Aman",
       "feature-tag-2": "Lebih Cepat",
       "feature-tag-3": "Terpercaya",
       "steps-badge": "Alur Transaksi",
       "step-title-1": "Konsultasi",
-      "step-title-2": "Pembayaran",
+      "step-title-2": "Pembayaran Muasasah",
       "step-title-3": "Tuntas",
       "step-desc-1":
         "Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal riyal dan tujuan transfer.",
@@ -227,9 +227,9 @@ const translations = {
     },
     html: {
       "feature-heading":
-        'Mengapa Memilih <span class="text-primary">RiyalDirect</span>?',
+        'Mengapa Memilih <span class="text-primary relative inline-block">RiyalDirect <svg class="absolute w-full h-2 bottom-1 left-0" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 Q 50 10 100 5" stroke="#0f766e" stroke-width="2" fill="none" opacity="0.25"></path></svg></span>?',
       "steps-heading":
-        'Alur Transfer Riyal & <span class="text-primary">Pembayaran Hotel</span>',
+        'Alur Transfer Riyal & <span class="text-primary">Pembayaran Hotel Saudi</span>',
       "testimonial-heading":
         'Dipercaya Travel & Jamaah <span class="text-primary">Seluruh Indonesia</span>',
       "faq-heading": 'Sering <span class="text-primary">Ditanyakan</span>',
@@ -1037,7 +1037,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const proofCarousel = document.getElementById("proof-carousel");
   const proofPrev = document.getElementById("proof-prev");
   const proofNext = document.getElementById("proof-next");
+  const proofProgress = document.getElementById("proof-progress");
   if (proofCarousel && proofPrev && proofNext) {
+    const proofDots = Array.from(
+      proofProgress?.querySelectorAll(".proof-dot") || []
+    );
     const getSlideStep = () => {
       const first = proofCarousel.querySelector(".proof-card");
       if (!first) return 320;
@@ -1048,12 +1052,38 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       return first.getBoundingClientRect().width + gap;
     };
+    const updateProofProgress = () => {
+      if (!proofDots.length) return;
+      const cards = Array.from(proofCarousel.querySelectorAll(".proof-card"));
+      if (!cards.length) return;
+      let activeIndex = 0;
+      let minDistance = Number.POSITIVE_INFINITY;
+      const containerLeft = proofCarousel.getBoundingClientRect().left;
+      cards.forEach((card, index) => {
+        const distance = Math.abs(
+          card.getBoundingClientRect().left - containerLeft
+        );
+        if (distance < minDistance) {
+          minDistance = distance;
+          activeIndex = index;
+        }
+      });
+      proofDots.forEach((dot, index) => {
+        dot.classList.toggle("is-active", index === activeIndex);
+      });
+    };
     proofPrev.addEventListener("click", () => {
       proofCarousel.scrollBy({ left: -getSlideStep(), behavior: "smooth" });
     });
     proofNext.addEventListener("click", () => {
       proofCarousel.scrollBy({ left: getSlideStep(), behavior: "smooth" });
     });
+    proofCarousel.addEventListener("scroll", () => {
+      window.clearTimeout(proofCarousel._progressTimer);
+      proofCarousel._progressTimer = window.setTimeout(updateProofProgress, 40);
+    });
+    window.addEventListener("resize", updateProofProgress);
+    updateProofProgress();
   }
 
   // ===== SCROLL ANIMATIONS =====
