@@ -1,0 +1,27 @@
+{
+  "name": "riyaldirect",
+  "version": "1.0.0",
+  "description": "Landing page statis untuk layanan transfer Riyal (SAR) ke rekening Muasasah/Hotel di Saudi Arabia, lengkap dengan kalkulator kurs SAR -> IDR, proof testimonial slider, FAQ, dan dukungan multi-bahasa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "tailwindcss -i ./build/tailwind.input.css -o ./assets/css/tailwind.css --minify",
+    "build": "npm run build:tailwind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqbaalfrm/riyaldirect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iqbaalfrm/riyaldirect/issues"
+  },
+  "homepage": "https://github.com/iqbaalfrm/riyaldirect#readme",
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "tailwindcss": "^3.4.17"
+  }
+}

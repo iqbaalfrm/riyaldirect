@@ -62,47 +62,18 @@
       content="Layanan transfer Riyal untuk pembayaran Muasasah dan hotel di Saudi dengan proses cepat dan transparan."
     />
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       rel="preload"
       as="image"
-      href="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1920&q=80"
+      href="assets/images/hero/hero-1600.webp"
+      imagesrcset="assets/images/hero/hero-768.webp 768w, assets/images/hero/hero-1600.webp 1600w"
+      imagesizes="100vw"
       fetchpriority="high"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#0f766e",
-              "primary-hover": "#0d6560",
-              "background-dark": "#ffffff",
-              "background-card": "#f9fafb",
-              "surface-dark": "#f3f4f6",
-              "gold-muted": "#5f7a72",
-              "gold-dark": "#d1d5db",
-            },
-            fontFamily: {
-              display: ["Plus Jakarta Sans", "sans-serif"],
-            },
-            backgroundImage: {
-              "islamic-pattern":
-                "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f766e' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="preload" href="assets/fonts/plus-jakarta-sans-400.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="assets/fonts/material-symbols-outlined.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="application/ld+json">
       {
@@ -349,12 +320,20 @@
       >
         <div class="absolute inset-0 z-0">
           <div class="absolute inset-0 hero-gradient-overlay z-10"></div>
-          <div
-            class="w-full h-full bg-cover bg-center bg-no-repeat"
-            style="
-              background-image: url(&quot;https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1920&q=80&quot;);
+          <img
+            src="assets/images/hero/hero-1600.webp"
+            srcset="
+              assets/images/hero/hero-768.webp 768w,
+              assets/images/hero/hero-1600.webp 1600w
             "
-          ></div>
+            sizes="100vw"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            class="w-full h-full object-cover object-center"
+          />
         </div>
       <div
         class="relative z-20 container mx-auto px-4 flex flex-col items-center text-center gap-8 mt-10"
@@ -562,7 +541,7 @@
             class="text-white/60 text-xs font-bold uppercase tracking-[0.2em] mt-3"
             id="quote-source"
           >
-            HR. Ibnu Majah no. 2892 â€” Shahih (Al-Albani)
+            HR. Ibnu Majah no. 2892 Ã¢â‚¬â€ Shahih (Al-Albani)
           </p>
         </div>
       </section>
@@ -1391,7 +1370,7 @@
           </div>
           <div class="border-t border-gray-800 pt-8 text-center">
             <p class="text-gray-500 text-sm" id="footer-copyright">
-              Â© 2026 RiyalDirect. Dilindungi Undang-Undang.
+              Ã‚Â© 2026 RiyalDirect. Dilindungi Undang-Undang.
             </p>
           </div>
         </div>
