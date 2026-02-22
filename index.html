@@ -65,6 +65,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1920&q=80"
+      fetchpriority="high"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
@@ -244,6 +250,7 @@
                 >
                 <select
                   id="language-switcher"
+                  aria-label="Pilih bahasa"
                   class="bg-transparent border-none text-xs font-bold text-gray-700 focus:outline-none cursor-pointer appearance-none pr-3"
                   style="
                     background-image: url('data:image/svg+xml;utf8,<svg fill=&quot;%23666&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;12&quot; height=&quot;12&quot;><path d=&quot;M7 10l5 5 5-5z&quot;/></svg>');
@@ -259,6 +266,7 @@
               </div>
               <button
                 onclick="toggleWAModal()"
+                aria-label="Hubungi kami via WhatsApp"
                 class="hidden md:flex items-center justify-center h-10 px-6 bg-primary hover:bg-primary-hover text-white text-sm font-bold rounded-lg transition-all hover:scale-[1.02] shadow-sm"
               >
                 <span id="nav-contact-text" class="mr-2">Hubungi Kami</span>
@@ -266,6 +274,7 @@
               </button>
               <button
                 id="hamburger-btn"
+                aria-label="Buka menu navigasi"
                 class="md:hidden p-2 text-gray-500 hover:text-gray-900"
               >
                 <span class="material-symbols-outlined">menu</span>
@@ -282,6 +291,7 @@
       >
         <button
           id="mobile-menu-close"
+          aria-label="Tutup menu navigasi"
           class="absolute top-6 right-6 text-gray-900 p-2"
         >
           <span class="material-symbols-outlined text-3xl">close</span>
@@ -408,6 +418,8 @@
                     <img
                       src="https://flagcdn.com/w80/sa.png"
                       alt="SAR"
+                      decoding="async"
+                      fetchpriority="high"
                       class="w-5 h-4 rounded-sm object-cover"
                     />
                   </div>
@@ -431,6 +443,8 @@
                     <img
                       src="https://flagcdn.com/w80/id.png"
                       alt="IDR"
+                      decoding="async"
+                      fetchpriority="high"
                       class="w-5 h-4 rounded-sm object-cover"
                     />
                   </div>
@@ -548,7 +562,7 @@
             class="text-white/60 text-xs font-bold uppercase tracking-[0.2em] mt-3"
             id="quote-source"
           >
-            HR. Ibnu Majah no. 2892 � Shahih (Al-Albani)
+            HR. Ibnu Majah no. 2892 â€” Shahih (Al-Albani)
           </p>
         </div>
       </section>
@@ -908,7 +922,8 @@
                     src="assets/images/proofs/1.png"
                     alt="Bukti transfer klien 1"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
 
@@ -922,7 +937,8 @@
                     src="assets/images/proofs/2.png"
                     alt="Bukti transfer klien 2"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
 
@@ -936,7 +952,8 @@
                     src="assets/images/proofs/3.png"
                     alt="Bukti transfer klien 3"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
 
@@ -950,7 +967,8 @@
                     src="assets/images/proofs/4.png"
                     alt="Bukti transfer klien 4"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
 
@@ -964,7 +982,8 @@
                     src="assets/images/proofs/5.png"
                     alt="Bukti transfer klien 5"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
 
@@ -978,7 +997,8 @@
                     src="assets/images/proofs/6.png"
                     alt="Bukti transfer klien 6"
                     loading="lazy"
-                  />
+                      decoding="async"
+                    />
                 </div>
               </article>
             </div>
@@ -1371,7 +1391,7 @@
           </div>
           <div class="border-t border-gray-800 pt-8 text-center">
             <p class="text-gray-500 text-sm" id="footer-copyright">
-              � 2026 RiyalDirect. Dilindungi Undang-Undang.
+              Â© 2026 RiyalDirect. Dilindungi Undang-Undang.
             </p>
           </div>
         </div>
@@ -1382,6 +1402,7 @@
     <button
       onclick="toggleWAModal()"
       id="whatsapp-float"
+      aria-label="Buka WhatsApp support"
       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:scale-110 transition-all wa-float-pulse"
     >
       <svg fill="white" width="28" height="28" viewBox="0 0 24 24">
@@ -1424,6 +1445,7 @@
           </div>
           <button
             onclick="toggleWAModal()"
+            aria-label="Tutup popup WhatsApp"
             class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:bg-gray-200 transition-all"
           >
             <span class="material-symbols-outlined text-lg">close</span>

@@ -486,6 +486,14 @@ body {
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 }
 
+.hero-calc #calc-rate-note {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.hero-calc #calc-live-data {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .hero-calc input,
 .hero-calc button {
   border-radius: 0.85rem !important;
@@ -503,6 +511,25 @@ body {
 
 .hero-trust > div {
   color: rgba(255, 255, 255, 0.68) !important;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  backdrop-filter: blur(8px);
+}
+
+.hero-trust > div span:last-child {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-weight: 600;
+}
+
+/* Clear keyboard focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(20, 184, 166, 0.95);
+  outline-offset: 2px;
 }
 
 /* ===== TRUST BADGE SHIMMER ===== */
